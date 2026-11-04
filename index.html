@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Vending Machine</title>
+  <style>
+:root { --candies: light-dark(#b3264f, #ff7aa2); --snacks: light-dark(#b4530a, #fb923c); --accent: var(--candies); --line: color-mix(in oklab, CanvasText 18%, Canvas); color-scheme: light dark }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { color-scheme: dark } }
+:root[data-theme="light"] { color-scheme: light }
+:root[data-theme="dark"] { color-scheme: dark }
+
+body { background: Canvas; color: CanvasText; font-family: system-ui; margin: 0; padding-block: 1em 3em; padding-left: max(1em, env(safe-area-inset-left, 0px)); padding-right: max(1em, env(safe-area-inset-right, 0px)) }
+header { display: flex; flex-wrap: wrap; align-items: baseline; gap: .25em 1em; margin-bottom: 1em }
+h1, .share { flex-basis: 100% }
+h1 span, li:has(figure + figure)::marker { color: var(--accent) }
+h1, h2, p, figure { margin: 0 }
+/* the shelf tabs are the shelf headings: as big as the title, the checked one in its shelf's color */
+label { font-size: 2em; font-weight: bold; color: GrayText; border-bottom: .15em solid transparent }
+#candies:checked + label { color: var(--candies); border-color: var(--candies) }
+#snacks:checked + label { color: var(--snacks); border-color: var(--snacks) }
+h2[data-count]::after { content: " · " attr(data-count); color: GrayText; font-weight: normal }
+
+/* one article per shelf; the checked radio picks which one is laid out */
+article { display: none; grid-template-columns: 3fr 2fr; grid-template-areas: "rank pool" "rank bin"; gap: 1em; align-items: start; --wash: color-mix(in oklab, var(--accent) 14%, Canvas) }
+article[data-shelf="snacks"] { --accent: var(--snacks) }
+body:has(#candies:checked) article[data-shelf="candies"], body:has(#snacks:checked) article[data-shelf="snacks"] { display: grid }
+@media (width < 50em) { article { grid-template-columns: 1fr; grid-template-areas: "pool" "rank" "bin" } }
+[data-status="ranked"] { grid-area: rank }
+[data-status="pool"] { grid-area: pool }
+[data-status="bin"] { grid-area: bin }
+
+section { display: flex; flex-wrap: wrap; align-content: start; gap: .5em; padding: .75em; border: 1px solid var(--line); border-radius: .75em }
+section h2, ol { flex-basis: 100% }
+/* the ladder: one li per rank value, numbered by the browser; its bottom padding is the drop zone for a new last rank */
+ol { margin: 0; padding: 0 0 1.5em 2.5em; border-bottom: 2px solid transparent }
+li { display: flex; flex-wrap: wrap; gap: .5em; padding: .4em 0; border-top: 2px solid transparent }
+li::marker { font-weight: bold; font-size: 1.5em }
+li:has(figure + figure)::marker { content: counter(list-item) "= " }
+.dragging :is(li, ol) { border-color: var(--line) }
+li.above, ol.end { border-color: var(--accent) }
+li.tie, .over { background: var(--wash) }
+
+figure { position: relative; width: 8em; display: flex; flex-direction: column; align-items: center; gap: .25em; padding: .4em; border: 1px solid var(--line); border-radius: .6em; background: Canvas; text-align: center; cursor: grab; user-select: none; touch-action: none }
+figure svg { width: 4em; height: auto }
+figcaption { text-wrap: balance; line-height: 1.2 }
+.new { border-color: var(--accent) }
+.lifting { opacity: .3 }
+[data-status="bin"] figure { opacity: .6 }
+[data-status="bin"] svg { filter: grayscale(.6) }
+figure button { position: absolute; top: .2em; right: .2em }
+@media (hover: hover) { figure button { visibility: hidden } figure:hover button, figure button:focus-visible { visibility: visible } }
+.dragging button { visibility: hidden }
+.ghost { position: fixed; left: var(--x); top: var(--y); z-index: 1; pointer-events: none; translate: -50% -50%; rotate: -3deg; box-shadow: 0 .5em 1.5em rgb(0 0 0 / .3) }
+@media (prefers-reduced-motion: reduce) { .ghost { rotate: none } }
+
+output { position: fixed; bottom: calc(1em + env(safe-area-inset-bottom, 0px)); left: 50%; translate: -50%; padding: .5em 1em; border-radius: 1em; background: CanvasText; color: Canvas }
+output:empty { display: none }
+.loaded ol:empty::before { content: "Drop your first one here"; color: GrayText }
+.loaded [data-status="pool"]:not(:has(figure))::after { content: "Everything is sorted. New suggestions show up here."; color: GrayText }
+.loaded [data-status="bin"]:not(:has(figure))::after { content: "Nothing tossed yet."; color: GrayText }
+  </style>
+ </head>
+ <body>
+<header>
+	<h1>Vending <span>Machine</span></h1>
+	<input type="radio" name="Shelf" id="candies" checked><label for="candies">Sweet shelf</label>
+	<input type="radio" name="Shelf" id="snacks"><label for="snacks">Salty shelf</label>
+	<p>Drag onto a number to tie, or between numbers for a new rank. × tosses it in the bin, where it stays.</p>
+	<p class="share">This is Michael's ranking. Rearrange it and the address bar becomes yours: copy the link to share it.</p>
+</header>
+<article data-shelf="candies">
+	<section data-status="ranked"><h2>Ranked</h2><ol></ol></section>
+	<section data-status="pool"><h2>To sort</h2></section>
+	<section data-status="bin"><h2>Bin</h2></section>
+</article>
+<article data-shelf="snacks">
+	<section data-status="ranked"><h2>Ranked</h2><ol></ol></section>
+	<section data-status="pool"><h2>To sort</h2></section>
+	<section data-status="bin"><h2>Bin</h2></section>
+</article>
+<output>Loading the machine…</output>
+
+<script type="module">
+import { encode, decode, catalog } from "./codec.mjs";
+
+const id = (id) => document.getElementById(id);
+const say = document.querySelector("output");
+const shelves = [...document.querySelectorAll("article")];
+
+// Wrapper graphics on a 64×44 canvas, drawn from the item's two wrapper colors.
+const art = {
+	bar: (s, t) => `<rect x="5" y="12" width="54" height="20" rx="2.5" fill="${s}"/><path d="M5 12l3.5 3.3-3.5 3.3 3.5 3.4-3.5 3.3 3.5 3.4L5 32M59 12l-3.5 3.3 3.5 3.3-3.5 3.4 3.5 3.3-3.5 3.4L59 32" stroke="${t}" stroke-width="1.5" fill="none"/><rect x="17" y="16" width="30" height="12" rx="2" fill="${t}" opacity=".9"/>`,
+	cup: (s, t) => `<path d="M9 11h46l-7 27H16z" fill="${s}"/><path d="M17 12v25M25 12l-1 25M32 12v25M39 12l1 25M47 12l-2 25" stroke="${t}" stroke-width="1.5" opacity=".6"/><ellipse cx="32" cy="11" rx="24" ry="4.5" fill="${t}"/><ellipse cx="32" cy="11" rx="18" ry="2.5" fill="${s}" opacity=".6"/>`,
+	pieces: (s, t) => `<circle cx="19" cy="27" r="10" fill="${s}"/><circle cx="36" cy="17" r="10" fill="${t}"/><circle cx="46" cy="31" r="9" fill="${s}" stroke="${t}" stroke-width="2.5"/><ellipse cx="33" cy="13" rx="3" ry="1.5" fill="#fff" opacity=".6"/><ellipse cx="16" cy="23" rx="3" ry="1.5" fill="#fff" opacity=".5"/>`,
+	box: (s, t) => `<rect x="8" y="8" width="48" height="30" rx="2.5" fill="${s}"/><path d="M8 17h48" stroke="${t}" stroke-width="2.5"/><rect x="18" y="22" width="28" height="10" rx="2" fill="${t}" opacity=".9"/>`,
+	bag: (s, t) => `<path d="M13 6h38v5l-3 29H16L13 11z" fill="${s}"/><path d="M13 6h38v6H13z" fill="${t}"/><path d="M17 14h30" stroke="${t}" stroke-width="1" stroke-dasharray="2 2" opacity=".6"/><rect x="21" y="20" width="22" height="11" rx="3" fill="${t}" opacity=".9"/>`,
+	roll: (s, t) => `<path d="M3 16l9-5v22l-9-5z" fill="${t}"/><path d="M61 16l-9-5v22l9-5z" fill="${t}"/><rect x="12" y="11" width="40" height="22" rx="8" fill="${s}"/><rect x="22" y="17" width="20" height="10" rx="3" fill="${t}" opacity=".9"/>`,
+	stick: (s, t) => `<rect x="4" y="15" width="56" height="14" rx="7" fill="${s}"/><path d="M9 29l7-14h5l-7 14zM21 29l7-14h5l-7 14zM33 29l7-14h5l-7 14zM45 29l7-14h5l-7 14z" fill="${t}"/>`,
+	tin: (s, t) => `<rect x="8" y="13" width="48" height="26" rx="5" fill="${s}"/><rect x="6" y="7" width="52" height="9" rx="4.5" fill="${t}"/><rect x="6" y="7" width="52" height="3" rx="1.5" fill="#fff" opacity=".35"/><rect x="18" y="22" width="28" height="10" rx="2" fill="${t}" opacity=".9"/>`,
+	can: (s, t) => `<rect x="20" y="6" width="24" height="34" rx="3" fill="${s}"/><rect x="18" y="3" width="28" height="6" rx="3" fill="${t}"/><rect x="18" y="3" width="28" height="2" rx="1" fill="#fff" opacity=".4"/><rect x="24" y="16" width="16" height="12" rx="2" fill="${t}" opacity=".9"/>`,
+	jar: (s, t) => `<path d="M16 14h32v22a5 5 0 0 1-5 5H21a5 5 0 0 1-5-5z" fill="${s}"/><rect x="18" y="4" width="28" height="9" rx="2" fill="${t}"/><rect x="18" y="4" width="28" height="2.5" rx="1" fill="#fff" opacity=".4"/><rect x="22" y="20" width="20" height="11" rx="2" fill="${t}" opacity=".9"/>`,
+	pop: (s, t) => `<rect x="30" y="24" width="4" height="18" rx="2" fill="${t}"/><circle cx="32" cy="15" r="13" fill="${s}"/><path d="M32 2a13 13 0 0 1 0 26z" fill="${t}" opacity=".45"/><circle cx="27" cy="10" r="3" fill="#fff" opacity=".5"/>`,
+	square: (s, t) => `<rect x="13" y="3" width="38" height="38" rx="4" fill="${s}"/><rect x="20" y="10" width="24" height="24" rx="2" fill="${t}" opacity=".9"/><path d="M20 10l24 24" stroke="${s}" stroke-width="2" opacity=".5"/>`,
+	disc: (s, t) => `<circle cx="32" cy="22" r="17" fill="${s}"/><circle cx="32" cy="22" r="10" fill="${t}" opacity=".9"/><circle cx="32" cy="22" r="4" fill="${s}" opacity=".7"/>`,
+	corn: (s, t) => `<path d="M32 3l14 38H18z" fill="#fff8e1"/><path d="M26 19h12l5 14H21z" fill="${s}"/><path d="M21 33h22l3 8H18z" fill="${t}"/>`,
+};
+
+// The hash is ;-separated: the open shelf's name, then a shelf=state segment per shelf (see codec.mjs).
+const segments = () => location.hash.slice(1).split(";").filter(Boolean);
+const stateOf = (shelf) => segments().find(s => s.startsWith(shelf.dataset.shelf + "="))?.slice(shelf.dataset.shelf.length + 1);
+
+function build(docId) {
+	const fig = document.createElement("figure");
+	fig.dataset.id = docId;
+	fig.innerHTML = `<svg viewBox="0 0 64 44" aria-hidden="true"></svg><figcaption></figcaption><button type="button"></button>`;
+	return fig;
+}
+
+// What an item is: name, note, and wrapper art. The figure's dataset is the item's state.
+function decorate(shelf, docId, d) {
+	const fig = shelf.querySelector(`figure[data-id="${docId}"]`) ?? shelf.appendChild(build(docId));
+	Object.assign(fig.dataset, { name: d.name, source: d.source, added: d.added });
+	fig.title = d.note ? `${d.name} — ${d.note}` : d.name;
+	fig.querySelector("figcaption").textContent = d.name;
+	const look = d.shape + d.colors.join();
+	if (fig.dataset.look !== look) {
+		fig.dataset.look = look;
+		fig.querySelector("svg").innerHTML = art[d.shape](...d.colors);
+	}
+	return fig;
+}
+
+// Where an item is: pile, a rank, or the bin.
+function settle(fig, d) {
+	Object.assign(fig.dataset, { status: d.status, rank: d.rank ?? "", updated: d.updated });
+	fig.classList.toggle("new", fig.dataset.source === "claude" && d.status === "pool");
+	const button = fig.querySelector("button");
+	button.textContent = d.status === "bin" ? "↩" : "×";
+	button.ariaLabel = d.status === "bin" ? "Put back in the pile" : "Toss in the bin";
+}
+
+const byName = (a, b) => a.dataset.name.localeCompare(b.dataset.name);
+
+// Place a shelf's figures from their datasets: tiers are one li per distinct rank, numbered competition-style by li.value.
+function place(shelf) {
+	const ladder = shelf.querySelector("ol");
+	const figs = [...shelf.querySelectorAll("figure[data-id]")];
+	const ranked = figs.filter(f => f.dataset.status === "ranked").sort((a, b) => a.dataset.rank - b.dataset.rank || byName(a, b));
+	const pool = figs.filter(f => f.dataset.status === "pool").sort((a, b) => (b.dataset.source === "claude") - (a.dataset.source === "claude") || b.dataset.added.localeCompare(a.dataset.added) || byName(a, b));
+	const bin = figs.filter(f => f.dataset.status === "bin").sort((a, b) => b.dataset.updated.localeCompare(a.dataset.updated) || byName(a, b));
+	const tiers = Object.entries(Object.groupBy(ranked, f => f.dataset.rank));
+	const ranks = tiers.map(([rank]) => rank);
+	[...ladder.children].filter(li => !ranks.includes(li.dataset.rank)).forEach(li => li.remove());
+	tiers.reduce((pos, [rank, members]) => {
+		const li = ladder.querySelector(`li[data-rank="${rank}"]`) ?? document.createElement("li");
+		li.dataset.rank = rank;
+		li.value = pos;
+		ladder.append(li);
+		li.append(...members);
+		return pos + members.length;
+	}, 1);
+	shelf.querySelector(`[data-status="pool"]`).append(...pool);
+	shelf.querySelector(`[data-status="bin"]`).append(...bin);
+	shelf.querySelector(`[data-status="ranked"] h2`).dataset.count = `${ranked.length} in ${tiers.length} ranks`;
+	shelf.querySelector(`[data-status="pool"] h2`).dataset.count = pool.length;
+	shelf.querySelector(`[data-status="bin"] h2`).dataset.count = bin.length;
+}
+
+// The shelf's state read off the DOM, and written back from a decoded hash.
+function stateFrom(shelf) {
+	const index = (fig) => +fig.dataset.i;
+	return {
+		tiers: [...shelf.querySelectorAll("ol > li")].map(li => [...li.children].map(index)),
+		bin: [...shelf.querySelectorAll(`[data-status="bin"] figure`)].map(index),
+	};
+}
+function apply(shelf, { tiers, bin }) {
+	const figs = [...shelf.querySelectorAll("figure[data-id]")];
+	const at = Object.fromEntries(figs.map(f => [f.dataset.i, f]));
+	figs.forEach(f => settle(f, { status: "pool", rank: null, updated: f.dataset.updated }));
+	tiers.forEach((tier, t) => tier.forEach(i => settle(at[i], { status: "ranked", rank: t + 1, updated: at[i].dataset.updated })));
+	bin.forEach(i => settle(at[i], { status: "bin", rank: null, updated: at[i].dataset.updated }));
+	place(shelf);
+}
+function writeHash() {
+	const tab = document.querySelector(`[name="Shelf"]:checked`).id;
+	const state = shelves.map(shelf => `${shelf.dataset.shelf}=${encode(stateFrom(shelf))}`);
+	history.replaceState(null, "", "#" + [tab, ...state].join(";"));
+}
+function showHash() {
+	(id(segments().find(s => !s.includes("="))) ?? id("candies")).checked = true;
+	shelves.filter(stateOf).forEach(shelf => apply(shelf, decode(stateOf(shelf))));
+}
+
+// Where a pointer position would drop: a pile, a tie on a tier, or the gap before tier g (g = tier count is the end).
+function zone(x, y) {
+	const el = document.elementFromPoint(x, y);
+	if (!el)
+		return null;
+	const li = el.closest("ol > li");
+	if (li) {
+		const { top, height } = li.getBoundingClientRect();
+		const t = (y - top) / height;
+		const i = [...li.parentElement.children].indexOf(li);
+		return t < .25 ? { ladder: li.parentElement, gap: i } : t > .75 ? { ladder: li.parentElement, gap: i + 1 } : { li };
+	}
+	const box = el.closest("section, ol");
+	const ladder = box?.tagName === "OL" ? box : box?.dataset.status === "ranked" ? box.querySelector("ol") : null;
+	return ladder ? { ladder, gap: ladder.children.length } : box && { box };
+}
+
+function indicator(z) {
+	if (!z)
+		return null;
+	if (z.box)
+		return [z.box, "over"];
+	if (z.li)
+		return [z.li, "tie"];
+	return z.gap < z.ladder.children.length ? [z.ladder.children[z.gap], "above"] : [z.ladder, "end"];
+}
+
+function patch(z, fig) {
+	if (z.box)
+		return { status: z.box.dataset.status, rank: null };
+	if (z.li)
+		return { status: "ranked", rank: +z.li.dataset.rank };
+	const ranks = [...z.ladder.children].map(li => +li.dataset.rank);
+	const own = ranks.indexOf(+fig.dataset.rank);
+	if (fig.parentElement.children.length === 1 && (z.gap === own || z.gap === own + 1))
+		return null;
+	const rank = !ranks.length ? 1 : z.gap === 0 ? ranks[0] - 1 : z.gap === ranks.length ? ranks.at(-1) + 1 : (ranks[z.gap - 1] + ranks[z.gap]) / 2;
+	return { status: "ranked", rank };
+}
+
+function move(fig, p) {
+	if (!p || (fig.dataset.status === p.status && (p.status !== "ranked" || +fig.dataset.rank === p.rank)))
+		return;
+	settle(fig, { ...p, updated: new Date().toISOString() });
+	place(fig.closest("article"));
+	writeHash();
+}
+
+document.addEventListener("click", e => {
+	const button = e.target.closest("figure button");
+	if (!button)
+		return;
+	const fig = button.closest("figure");
+	move(fig, { status: fig.dataset.status === "bin" ? "pool" : "bin", rank: null });
+});
+
+const slop = 6; // pointer travel before a press becomes a drag, so a tap still clicks
+const edge = innerHeight / 10; // viewport band near each edge that scrolls the page while dragging
+let drag;
+
+function aim(x, y) {
+	Object.assign(drag, { lastX: x, lastY: y });
+	const [el, cls] = indicator(zone(x, y)) ?? [];
+	if (drag.lit?.[0] !== el || drag.lit?.[1] !== cls) {
+		drag.lit?.[0].classList.remove(drag.lit[1]);
+		drag.lit = el && [el, cls];
+		el?.classList.add(cls);
+	}
+}
+
+document.addEventListener("pointerdown", e => {
+	const fig = e.target.closest("figure[data-id]");
+	if (!fig || e.target.closest("button") || e.button)
+		return;
+	drag = { fig, x: e.clientX, y: e.clientY, pointer: e.pointerId };
+});
+
+document.addEventListener("pointermove", e => {
+	if (!drag || e.pointerId !== drag.pointer)
+		return;
+	if (!drag.ghost) {
+		if (Math.hypot(e.clientX - drag.x, e.clientY - drag.y) < slop)
+			return;
+		drag.ghost = drag.fig.cloneNode(true);
+		delete drag.ghost.dataset.id;
+		drag.ghost.classList.add("ghost");
+		drag.fig.closest("article").append(drag.ghost);
+		drag.fig.classList.add("lifting");
+		document.body.classList.add("dragging");
+	}
+	e.preventDefault();
+	drag.ghost.style.setProperty("--x", `${e.clientX}px`);
+	drag.ghost.style.setProperty("--y", `${e.clientY}px`);
+	aim(e.clientX, e.clientY);
+	if (e.clientY < edge)
+		scrollBy(0, -edge / 5);
+	else if (e.clientY > innerHeight - edge)
+		scrollBy(0, edge / 5);
+}, { passive: false });
+
+function drop(e) {
+	if (!drag || e.pointerId !== drag.pointer)
+		return;
+	if (drag.ghost) {
+		drag.lit?.[0].classList.remove(drag.lit[1]);
+		const z = e.type === "pointerup" && zone(e.clientX, e.clientY);
+		if (z)
+			move(drag.fig, patch(z, drag.fig));
+		drag.ghost.remove();
+		drag.fig.classList.remove("lifting");
+		document.body.classList.remove("dragging");
+	}
+	drag = null;
+}
+document.addEventListener("pointerup", drop);
+document.addEventListener("pointercancel", drop);
+
+addEventListener("hashchange", showHash);
+document.querySelectorAll(`[name="Shelf"]`).forEach(radio => radio.addEventListener("change", writeHash));
+
+// The exported data is the default ranking; the hash is the visitor's.
+await Promise.all(shelves.map(async shelf => {
+	const { items } = await (await fetch(`data/${shelf.dataset.shelf}.json`)).json();
+	catalog(items).forEach((d, i) => {
+		const fig = decorate(shelf, d.id, d);
+		fig.dataset.i = i;
+		settle(fig, d);
+	});
+	place(shelf);
+	shelf.classList.add("loaded");
+}));
+say.textContent = "";
+showHash();
+</script>
+ </body>
+</html>

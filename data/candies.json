@@ -1,0 +1,1342 @@
+{
+ "collection": "candies",
+ "exported": "2026-11-03",
+ "items": [
+  {
+   "id": "caramello",
+   "added": "2026-11-03T22:05:00Z",
+   "name": "Cadbury Caramello",
+   "note": "Runny caramel in milk chocolate squares.",
+   "rank": -2,
+   "rankedAt": "2026-11-04T03:01:33.858Z",
+   "shape": "square",
+   "source": "claude",
+   "status": "ranked",
+   "updated": "2026-11-04T03:01:33.858Z",
+   "colors": [
+    "#c8912a",
+    "#5a3a1e"
+   ]
+  },
+  {
+   "id": "heath",
+   "added": "2026-11-03T21:55:00Z",
+   "name": "Heath Bar",
+   "note": "Skor's older rival. Same toffee idea, slightly softer.",
+   "rank": -2,
+   "rankedAt": "2026-11-04T03:54:02.402Z",
+   "shape": "bar",
+   "source": "claude",
+   "status": "ranked",
+   "updated": "2026-11-04T03:54:02.402Z",
+   "colors": [
+    "#5a3a1e",
+    "#f5a623"
+   ]
+  },
+  {
+   "id": "reeses-cups",
+   "added": "2026-11-03T00:00:00Z",
+   "name": "Reese's Peanut Butter Cups",
+   "rank": -2,
+   "rankedAt": "2026-11-04T02:52:00.219Z",
+   "shape": "cup",
+   "source": "seed",
+   "status": "ranked",
+   "updated": "2026-11-04T02:52:00.219Z",
+   "colors": [
+    "#f58220",
+    "#5a3a1e"
+   ]
+  },
+  {
+   "id": "skor",
+   "added": "2026-11-03T21:55:00Z",
+   "name": "Skor",
+   "note": "You asked for it.",
+   "rank": -2,
+   "rankedAt": "2026-11-04T03:54:04.241Z",
+   "shape": "bar",
+   "source": "claude",
+   "status": "ranked",
+   "updated": "2026-11-04T03:54:04.241Z",
+   "colors": [
+    "#3b2a1a",
+    "#b08d57"
+   ]
+  },
+  {
+   "id": "butterfinger",
+   "added": "2026-11-03T00:00:00Z",
+   "name": "Butterfinger",
+   "rank": -1,
+   "rankedAt": "2026-11-04T03:20:44.164Z",
+   "shape": "bar",
+   "source": "seed",
+   "status": "ranked",
+   "updated": "2026-11-04T03:20:44.164Z",
+   "colors": [
+    "#f7b500",
+    "#2b5fd0"
+   ]
+  },
+  {
+   "id": "milk-duds",
+   "added": "2026-11-03T00:00:00Z",
+   "name": "Milk Duds",
+   "rank": -1,
+   "rankedAt": "2026-11-04T02:51:48.398Z",
+   "shape": "box",
+   "source": "seed",
+   "status": "ranked",
+   "updated": "2026-11-04T02:51:48.398Z",
+   "colors": [
+    "#f7b500",
+    "#5a3a1e"
+   ]
+  },
+  {
+   "id": "riesen",
+   "added": "2026-11-03T21:55:00Z",
+   "name": "Riesen",
+   "note": "You asked for it.",
+   "rank": -1,
+   "rankedAt": "2026-11-04T02:56:19.021Z",
+   "shape": "bag",
+   "source": "claude",
+   "status": "ranked",
+   "updated": "2026-11-04T02:56:19.021Z",
+   "colors": [
+    "#4a2a14",
+    "#c8912a"
+   ]
+  },
+  {
+   "id": "rolo",
+   "added": "2026-11-03T00:00:00Z",
+   "name": "Rolo",
+   "rank": -1,
+   "rankedAt": "2026-11-04T03:20:42.154Z",
+   "shape": "roll",
+   "source": "seed",
+   "status": "ranked",
+   "updated": "2026-11-04T03:20:42.154Z",
+   "colors": [
+    "#c8912a",
+    "#5a3a1e"
+   ]
+  },
+  {
+   "id": "kit-kat",
+   "added": "2026-11-03T00:00:00Z",
+   "name": "Kit Kat",
+   "rank": 0,
+   "rankedAt": "2026-11-04T02:51:45.321Z",
+   "shape": "bar",
+   "source": "seed",
+   "status": "ranked",
+   "updated": "2026-11-04T02:51:45.321Z",
+   "colors": [
+    "#d7191c",
+    "#f4b8b8"
+   ]
+  },
+  {
+   "id": "pb-mms",
+   "added": "2026-11-03T21:55:00Z",
+   "name": "Peanut Butter M&M's",
+   "note": "You asked for it.",
+   "rank": 0,
+   "rankedAt": "2026-11-04T02:56:01.412Z",
+   "shape": "pieces",
+   "source": "claude",
+   "status": "ranked",
+   "updated": "2026-11-04T02:56:01.412Z",
+   "colors": [
+    "#f58220",
+    "#3d2314"
+   ]
+  },
+  {
+   "id": "pretzel-crisps-white-peppermint",
+   "added": "2026-11-03T22:05:00Z",
+   "name": "Pretzel Crisps White Peppermint",
+   "note": "Snack Factory, seasonal (Nov to Dec).",
+   "rank": 0,
+   "rankedAt": "2026-11-04T03:20:53.090Z",
+   "shape": "bag",
+   "source": "claude",
+   "status": "ranked",
+   "updated": "2026-11-04T03:20:53.090Z",
+   "colors": [
+    "#c8102e",
+    "#f4f6f8"
+   ]
+  },
+  {
+   "id": "reeses-pieces",
+   "added": "2026-11-03T00:00:00Z",
+   "name": "Reese's Pieces",
+   "rank": 0,
+   "rankedAt": "2026-11-04T02:53:05.090Z",
+   "shape": "pieces",
+   "source": "seed",
+   "status": "ranked",
+   "updated": "2026-11-04T02:53:05.090Z",
+   "colors": [
+    "#f58220",
+    "#8b4513"
+   ]
+  },
+  {
+   "id": "cow-tales",
+   "added": "2026-11-03T21:55:00Z",
+   "name": "Cow Tales",
+   "note": "Same caramel as Bulls-Eyes, in a stick.",
+   "rank": 0.25,
+   "rankedAt": "2026-11-04T02:55:33.202Z",
+   "shape": "stick",
+   "source": "claude",
+   "status": "ranked",
+   "updated": "2026-11-04T02:55:33.202Z",
+   "colors": [
+    "#c8912a",
+    "#4a2a14"
+   ]
+  },
+  {
+   "id": "caramel-creams",
+   "added": "2026-11-03T21:55:00Z",
+   "name": "Goetze's Caramel Creams",
+   "note": "Bulls-Eyes. Caramel wrapped around a cream center.",
+   "rank": 0.25,
+   "rankedAt": "2026-11-04T02:56:12.886Z",
+   "shape": "bag",
+   "source": "claude",
+   "status": "ranked",
+   "updated": "2026-11-04T02:56:12.886Z",
+   "colors": [
+    "#c8912a",
+    "#fff6e0"
+   ]
+  },
+  {
+   "id": "reeses-sticks",
+   "added": "2026-11-04T03:05:00Z",
+   "name": "Reese's Sticks",
+   "note": "Kit Kat and Reese's in one: wafer, peanut butter, chocolate. Your #1 and #8 combined.",
+   "rank": 0.25,
+   "rankedAt": "2026-11-04T03:21:04.603Z",
+   "shape": "bar",
+   "source": "claude",
+   "status": "ranked",
+   "updated": "2026-11-04T03:21:04.603Z",
+   "colors": [
+    "#f58220",
+    "#d7191c"
+   ]
+  },
+  {
+   "id": "twix",
+   "added": "2026-11-03T00:00:00Z",
+   "name": "Twix",
+   "rank": 0.25,
+   "rankedAt": "2026-11-04T03:54:16.935Z",
+   "shape": "bar",
+   "source": "seed",
+   "status": "ranked",
+   "updated": "2026-11-04T03:54:16.935Z",
+   "colors": [
+    "#c8912a",
+    "#6b3a1a"
+   ]
+  },
+  {
+   "id": "almond-joy",
+   "added": "2026-11-03T00:00:00Z",
+   "name": "Almond Joy",
+   "rank": 2,
+   "rankedAt": "2026-11-04T03:54:23.114Z",
+   "shape": "bar",
+   "source": "seed",
+   "status": "ranked",
+   "updated": "2026-11-04T03:54:23.114Z",
+   "colors": [
+    "#1b61b0",
+    "#9fc3ea"
+   ]
+  },
+  {
+   "id": "maple-nut-goodies",
+   "added": "2026-11-03T21:55:00Z",
+   "name": "Maple Nut Goodies",
+   "note": "You asked for it. Brach's, since the 1930s.",
+   "rank": 2,
+   "rankedAt": "2026-11-04T02:55:42.050Z",
+   "shape": "bag",
+   "source": "claude",
+   "status": "ranked",
+   "updated": "2026-11-04T02:55:42.050Z",
+   "colors": [
+    "#b5651d",
+    "#f3dca8"
+   ]
+  },
+  {
+   "id": "terrys-chocolate-orange",
+   "added": "2026-11-03T22:05:00Z",
+   "name": "Terry's Chocolate Orange",
+   "note": "Whack it on the table. Stocking stuffer.",
+   "rank": 2,
+   "rankedAt": "2026-11-04T03:01:54.833Z",
+   "shape": "disc",
+   "source": "claude",
+   "status": "ranked",
+   "updated": "2026-11-04T03:01:54.833Z",
+   "colors": [
+    "#f58220",
+    "#4a2a14"
+   ]
+  },
+  {
+   "id": "york",
+   "added": "2026-11-03T00:00:00Z",
+   "name": "York Peppermint Pattie",
+   "rank": 2,
+   "rankedAt": "2026-11-04T03:21:45.185Z",
+   "shape": "disc",
+   "source": "seed",
+   "status": "ranked",
+   "updated": "2026-11-04T03:21:45.185Z",
+   "colors": [
+    "#2b2b7f",
+    "#dfe6ef"
+   ]
+  },
+  {
+   "id": "king-leo",
+   "added": "2026-11-03T22:05:00Z",
+   "name": "King Leo Soft Peppermint Sticks",
+   "note": "The powdery ones in the red tin. Made by Standard Candy in Nashville, same folks as Goo Goo. Spotty stock everywhere.",
+   "rank": 4,
+   "rankedAt": "2026-11-04T03:21:20.512Z",
+   "shape": "stick",
+   "source": "claude",
+   "status": "ranked",
+   "updated": "2026-11-04T03:21:20.512Z",
+   "colors": [
+    "#c8102e",
+    "#ffffff"
+   ]
+  },
+  {
+   "id": "mike-and-ike",
+   "added": "2026-11-03T00:00:00Z",
+   "name": "Mike and Ike",
+   "rank": 4,
+   "rankedAt": "2026-11-04T02:53:24.999Z",
+   "shape": "box",
+   "source": "seed",
+   "status": "ranked",
+   "updated": "2026-11-04T02:53:24.999Z",
+   "colors": [
+    "#2e7d32",
+    "#ffc107"
+   ]
+  },
+  {
+   "id": "skittles",
+   "added": "2026-11-03T00:00:00Z",
+   "name": "Skittles",
+   "rank": 4,
+   "rankedAt": "2026-11-04T02:53:08.876Z",
+   "shape": "pieces",
+   "source": "seed",
+   "status": "ranked",
+   "updated": "2026-11-04T02:53:08.876Z",
+   "colors": [
+    "#d7191c",
+    "#8e44ad"
+   ]
+  },
+  {
+   "id": "almond-roca",
+   "added": "2026-11-03T22:05:00Z",
+   "name": "Almond Roca",
+   "note": "Butter toffee rolled in almonds, in the pink tin. If Skor ranks high, this does too.",
+   "rank": null,
+   "shape": "tin",
+   "source": "claude",
+   "status": "pool",
+   "updated": "2026-11-03T22:05:00Z",
+   "colors": [
+    "#e8a0b4",
+    "#c8912a"
+   ]
+  },
+  {
+   "id": "andes-peppermint-crunch",
+   "added": "2026-11-03T22:05:00Z",
+   "name": "Andes Peppermint Crunch",
+   "note": "Seasonal Andes. Grocery checkout in December.",
+   "rank": null,
+   "shape": "square",
+   "source": "claude",
+   "status": "pool",
+   "updated": "2026-11-03T22:05:00Z",
+   "colors": [
+    "#c8102e",
+    "#2e7d32"
+   ]
+  },
+  {
+   "id": "big-hunk",
+   "added": "2026-11-03T22:05:00Z",
+   "name": "Big Hunk",
+   "note": "Honey nougat with peanuts. West Coast, rare in Tennessee.",
+   "rank": null,
+   "shape": "bar",
+   "source": "claude",
+   "status": "pool",
+   "updated": "2026-11-03T22:05:00Z",
+   "colors": [
+    "#c8102e",
+    "#f5c400"
+   ]
+  },
+  {
+   "id": "turtles",
+   "added": "2026-11-03T22:05:00Z",
+   "name": "DeMet's Turtles",
+   "note": "Pecans, caramel, chocolate. Grandma's coffee table.",
+   "rank": null,
+   "shape": "box",
+   "source": "claude",
+   "status": "pool",
+   "updated": "2026-11-03T22:05:00Z",
+   "colors": [
+    "#2e7d32",
+    "#c8912a"
+   ]
+  },
+  {
+   "id": "enstrom-toffee",
+   "added": "2026-11-03T22:05:00Z",
+   "name": "Enstrom Almond Toffee",
+   "note": "Colorado mail-order toffee. The one toffee people ship as gifts.",
+   "rank": null,
+   "shape": "box",
+   "source": "claude",
+   "status": "pool",
+   "updated": "2026-11-03T22:05:00Z",
+   "colors": [
+    "#4a2a14",
+    "#c8912a"
+   ]
+  },
+  {
+   "id": "frango-mints",
+   "added": "2026-11-03T22:05:00Z",
+   "name": "Frango Mints",
+   "note": "Marshall Field's department store mint. Mail order now.",
+   "rank": null,
+   "shape": "box",
+   "source": "claude",
+   "status": "pool",
+   "updated": "2026-11-03T22:05:00Z",
+   "colors": [
+    "#2e7d32",
+    "#4a2a14"
+   ]
+  },
+  {
+   "id": "ghirardelli-peppermint-bark",
+   "added": "2026-11-03T22:05:00Z",
+   "name": "Ghirardelli Peppermint Bark",
+   "note": "The squares. Seasonal.",
+   "rank": null,
+   "shape": "square",
+   "source": "claude",
+   "status": "pool",
+   "updated": "2026-11-03T22:05:00Z",
+   "colors": [
+    "#c8102e",
+    "#4a2a14"
+   ]
+  },
+  {
+   "id": "goo-goo-supreme",
+   "added": "2026-11-03T22:05:00Z",
+   "name": "Goo Goo Supreme",
+   "note": "The pecan one.",
+   "rank": null,
+   "shape": "bar",
+   "source": "claude",
+   "status": "pool",
+   "updated": "2026-11-03T22:05:00Z",
+   "colors": [
+    "#1b61b0",
+    "#f2e6c9"
+   ]
+  },
+  {
+   "id": "nut-goodie",
+   "added": "2026-11-03T22:05:00Z",
+   "name": "Pearson's Nut Goodie",
+   "note": "Maple nougat with peanuts under chocolate. Maple Nut Goodies as a bar.",
+   "rank": null,
+   "shape": "bar",
+   "source": "claude",
+   "status": "pool",
+   "updated": "2026-11-03T22:05:00Z",
+   "colors": [
+    "#c8102e",
+    "#2e7d32"
+   ]
+  },
+  {
+   "id": "nutrageous",
+   "added": "2026-11-03T22:05:00Z",
+   "name": "Reese's Nutrageous",
+   "note": "Peanut butter, caramel and whole peanuts. Hard to find on shelves now.",
+   "rank": null,
+   "shape": "bar",
+   "source": "claude",
+   "status": "pool",
+   "updated": "2026-11-03T22:05:00Z",
+   "colors": [
+    "#f58220",
+    "#4a2a14"
+   ]
+  },
+  {
+   "id": "starburst",
+   "added": "2026-11-03T00:00:00Z",
+   "name": "Starburst",
+   "rank": null,
+   "shape": "roll",
+   "source": "seed",
+   "status": "pool",
+   "updated": "2026-11-03T00:00:00Z",
+   "colors": [
+    "#f06292",
+    "#ffd54f"
+   ]
+  },
+  {
+   "id": "thin-mints",
+   "added": "2026-11-03T22:05:00Z",
+   "name": "Thin Mints",
+   "note": "Girl Scouts. Counts if the pretzel crisps count.",
+   "rank": null,
+   "shape": "box",
+   "source": "claude",
+   "status": "pool",
+   "updated": "2026-11-03T22:05:00Z",
+   "colors": [
+    "#2e7d32",
+    "#4a2a14"
+   ]
+  },
+  {
+   "id": "tj-dark-pb-cups",
+   "added": "2026-11-03T22:05:00Z",
+   "name": "Trader Joe's Dark Chocolate PB Cups",
+   "note": "Mini cups in the tub.",
+   "rank": null,
+   "shape": "cup",
+   "source": "claude",
+   "status": "pool",
+   "updated": "2026-11-03T22:05:00Z",
+   "colors": [
+    "#4a2a14",
+    "#f58220"
+   ]
+  },
+  {
+   "id": "twix-peanut-butter",
+   "added": "2026-11-04T03:05:00Z",
+   "name": "Twix Peanut Butter",
+   "note": "Cookie, peanut butter instead of caramel, chocolate.",
+   "rank": null,
+   "shape": "bar",
+   "source": "claude",
+   "status": "pool",
+   "updated": "2026-11-04T03:05:00Z",
+   "colors": [
+    "#c8912a",
+    "#f58220"
+   ]
+  },
+  {
+   "id": "williams-sonoma-peppermint-bark",
+   "added": "2026-11-03T22:05:00Z",
+   "name": "Williams Sonoma Peppermint Bark",
+   "note": "The one in the tin. Pricey, thick, the original.",
+   "rank": null,
+   "shape": "tin",
+   "source": "claude",
+   "status": "pool",
+   "updated": "2026-11-03T22:05:00Z",
+   "colors": [
+    "#c8102e",
+    "#f4f6f8"
+   ]
+  },
+  {
+   "id": "100-grand",
+   "added": "2026-11-03T00:00:00Z",
+   "binnedAt": "2026-11-04T02:51:32.659Z",
+   "name": "100 Grand",
+   "rank": null,
+   "shape": "bar",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T02:51:32.659Z",
+   "colors": [
+    "#c8102e",
+    "#f5c400"
+   ]
+  },
+  {
+   "id": "3-musketeers",
+   "added": "2026-11-03T00:00:00Z",
+   "binnedAt": "2026-11-04T02:51:33.644Z",
+   "name": "3 Musketeers",
+   "rank": null,
+   "shape": "bar",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T02:51:33.644Z",
+   "colors": [
+    "#9a9fa8",
+    "#1d4aa8"
+   ]
+  },
+  {
+   "id": "airheads",
+   "added": "2026-11-03T00:00:00Z",
+   "binnedAt": "2026-11-04T02:51:34.789Z",
+   "name": "Airheads",
+   "rank": null,
+   "shape": "bag",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T02:51:34.789Z",
+   "colors": [
+    "#fdd835",
+    "#ec407a"
+   ]
+  },
+  {
+   "id": "baby-ruth",
+   "added": "2026-11-03T00:00:00Z",
+   "binnedAt": "2026-11-04T02:52:38.831Z",
+   "name": "Baby Ruth",
+   "rank": null,
+   "shape": "bar",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T02:52:38.831Z",
+   "colors": [
+    "#c8102e",
+    "#1a4fb4"
+   ]
+  },
+  {
+   "id": "bit-o-honey",
+   "added": "2026-11-03T21:55:00Z",
+   "binnedAt": "2026-11-04T02:55:28.274Z",
+   "name": "Bit-O-Honey",
+   "note": "Honey-almond taffy that pulls fillings. Old-timer.",
+   "rank": null,
+   "shape": "bar",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T02:55:28.274Z",
+   "colors": [
+    "#f5c400",
+    "#c87a1a"
+   ]
+  },
+  {
+   "id": "blow-pop",
+   "added": "2026-11-03T00:00:00Z",
+   "binnedAt": "2026-11-04T02:52:39.944Z",
+   "name": "Blow Pop",
+   "rank": null,
+   "shape": "pop",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T02:52:39.944Z",
+   "colors": [
+    "#1976d2",
+    "#e53935"
+   ]
+  },
+  {
+   "id": "bobs-sweet-stripes",
+   "added": "2026-11-03T22:05:00Z",
+   "binnedAt": "2026-11-04T03:01:28.881Z",
+   "name": "Bob's Sweet Stripes",
+   "note": "Same melt-away soft peppermint as King Leo, in a bag and easy to find.",
+   "rank": null,
+   "shape": "bag",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T03:01:28.881Z",
+   "colors": [
+    "#c8102e",
+    "#f4f6f8"
+   ]
+  },
+  {
+   "id": "brachs-christmas-nougats",
+   "added": "2026-11-03T22:05:00Z",
+   "binnedAt": "2026-11-04T03:01:30.727Z",
+   "name": "Brach's Peppermint Nougats",
+   "note": "Soft peppermint nougat with the little green tree. Powdery, seasonal.",
+   "rank": null,
+   "shape": "bag",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T03:01:30.727Z",
+   "colors": [
+    "#f4f6f8",
+    "#2e7d32"
+   ]
+  },
+  {
+   "id": "candy-corn",
+   "added": "2026-11-03T00:00:00Z",
+   "binnedAt": "2026-11-04T02:52:31.295Z",
+   "name": "Candy Corn",
+   "rank": null,
+   "shape": "corn",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T02:52:31.295Z",
+   "colors": [
+    "#ff8c00",
+    "#ffd700"
+   ]
+  },
+  {
+   "id": "caramel-mms",
+   "added": "2026-11-04T03:05:00Z",
+   "binnedAt": "2026-11-04T03:02:52.162Z",
+   "name": "Caramel M&M's",
+   "note": "Plain and Peanut went in the bin, PB stayed. Caramel is the other one worth a shot.",
+   "rank": null,
+   "shape": "pieces",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T03:02:52.162Z",
+   "colors": [
+    "#c8912a",
+    "#3d2314"
+   ]
+  },
+  {
+   "id": "charleston-chew",
+   "added": "2026-11-03T21:55:00Z",
+   "binnedAt": "2026-11-04T02:55:29.212Z",
+   "name": "Charleston Chew",
+   "note": "Nougat under chocolate. Best frozen and cracked.",
+   "rank": null,
+   "shape": "bar",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T02:55:29.212Z",
+   "colors": [
+    "#c8102e",
+    "#f5c400"
+   ]
+  },
+  {
+   "id": "cherry-mash",
+   "added": "2026-11-03T21:55:00Z",
+   "binnedAt": "2026-11-04T02:55:30.170Z",
+   "name": "Cherry Mash",
+   "note": "Cherry fondant under chopped peanuts and chocolate. Regional, found in Southern truck stops.",
+   "rank": null,
+   "shape": "bar",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T02:55:30.170Z",
+   "colors": [
+    "#c8102e",
+    "#4a2a14"
+   ]
+  },
+  {
+   "id": "chick-o-stick",
+   "added": "2026-11-03T21:55:00Z",
+   "binnedAt": "2026-11-04T02:55:31.108Z",
+   "name": "Chick-O-Stick",
+   "note": "Peanut butter and toasted coconut. Southern gas-station staple.",
+   "rank": null,
+   "shape": "bar",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T02:55:31.108Z",
+   "colors": [
+    "#f7941d",
+    "#f2e6c9"
+   ]
+  },
+  {
+   "id": "flipz-white-fudge",
+   "added": "2026-11-03T22:05:00Z",
+   "binnedAt": "2026-11-04T03:03:13.215Z",
+   "name": "Flipz White Fudge Pretzels",
+   "note": "Sweet and salty, same lane as the peppermint Pretzel Crisps.",
+   "rank": null,
+   "shape": "bag",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T03:03:13.215Z",
+   "colors": [
+    "#f4f6f8",
+    "#8b5a2b"
+   ]
+  },
+  {
+   "id": "fun-dip",
+   "added": "2026-11-03T00:00:00Z",
+   "binnedAt": "2026-11-04T02:52:44.848Z",
+   "name": "Fun Dip",
+   "rank": null,
+   "shape": "bag",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T02:52:44.848Z",
+   "colors": [
+    "#1e88e5",
+    "#e53935"
+   ]
+  },
+  {
+   "id": "ghirardelli-caramel",
+   "added": "2026-11-04T03:05:00Z",
+   "binnedAt": "2026-11-04T03:02:54.091Z",
+   "name": "Ghirardelli Milk Chocolate Caramel",
+   "note": "The squares with runny caramel. Caramello's upscale cousin.",
+   "rank": null,
+   "shape": "square",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T03:02:54.091Z",
+   "colors": [
+    "#c8912a",
+    "#5a3a1e"
+   ]
+  },
+  {
+   "id": "goo-goo-cluster",
+   "added": "2026-11-03T00:00:00Z",
+   "binnedAt": "2026-11-04T02:52:30.396Z",
+   "name": "Goo Goo Cluster",
+   "note": "Nashville's own, since 1912.",
+   "rank": null,
+   "shape": "bar",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T02:52:30.396Z",
+   "colors": [
+    "#c8102e",
+    "#f2e6c9"
+   ]
+  },
+  {
+   "id": "haribo-gold-bears",
+   "added": "2026-11-03T00:00:00Z",
+   "binnedAt": "2026-11-04T02:52:32.647Z",
+   "name": "Haribo Gold-Bears",
+   "rank": null,
+   "shape": "bag",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T02:52:32.647Z",
+   "colors": [
+    "#f5c400",
+    "#c8102e"
+   ]
+  },
+  {
+   "id": "hersheys-bar",
+   "added": "2026-11-03T00:00:00Z",
+   "binnedAt": "2026-11-04T02:52:43.772Z",
+   "name": "Hershey's Milk Chocolate",
+   "rank": null,
+   "shape": "bar",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T02:52:43.772Z",
+   "colors": [
+    "#4a2a14",
+    "#c9b79c"
+   ]
+  },
+  {
+   "id": "symphony-toffee",
+   "added": "2026-11-04T03:05:00Z",
+   "binnedAt": "2026-11-04T03:02:56.827Z",
+   "name": "Hershey's Symphony Toffee & Almond",
+   "note": "Skor and Heath tied at #3. This is toffee bits in a creamier bar.",
+   "rank": null,
+   "shape": "bar",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T03:02:56.827Z",
+   "colors": [
+    "#2b2b7f",
+    "#c8912a"
+   ]
+  },
+  {
+   "id": "hot-tamales",
+   "added": "2026-11-03T00:00:00Z",
+   "binnedAt": "2026-11-04T02:51:57.849Z",
+   "name": "Hot Tamales",
+   "rank": null,
+   "shape": "box",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T02:51:57.849Z",
+   "colors": [
+    "#c8102e",
+    "#ff7043"
+   ]
+  },
+  {
+   "id": "jolly-ranchers",
+   "added": "2026-11-03T00:00:00Z",
+   "binnedAt": "2026-11-04T02:51:56.358Z",
+   "name": "Jolly Ranchers",
+   "rank": null,
+   "shape": "bag",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T02:51:56.358Z",
+   "colors": [
+    "#7b1fa2",
+    "#e53935"
+   ]
+  },
+  {
+   "id": "junior-mints",
+   "added": "2026-11-03T00:00:00Z",
+   "binnedAt": "2026-11-04T03:21:41.859Z",
+   "name": "Junior Mints",
+   "rank": null,
+   "rankedAt": "2026-11-04T02:52:47.647Z",
+   "shape": "box",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:21:41.859Z",
+   "colors": [
+    "#1b8a3a",
+    "#e6f2ea"
+   ]
+  },
+  {
+   "id": "laffy-taffy",
+   "added": "2026-11-03T00:00:00Z",
+   "binnedAt": "2026-11-04T02:51:55.286Z",
+   "name": "Laffy Taffy",
+   "rank": null,
+   "shape": "bag",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T02:51:55.286Z",
+   "colors": [
+    "#8bc34a",
+    "#ffeb3b"
+   ]
+  },
+  {
+   "id": "mms",
+   "added": "2026-11-03T00:00:00Z",
+   "binnedAt": "2026-11-04T02:53:12.785Z",
+   "name": "M&M's",
+   "rank": null,
+   "shape": "pieces",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T02:53:12.785Z",
+   "colors": [
+    "#3d2314",
+    "#ffcc00"
+   ]
+  },
+  {
+   "id": "mary-jane",
+   "added": "2026-11-03T21:55:00Z",
+   "binnedAt": "2026-11-04T02:56:09.367Z",
+   "name": "Mary Jane",
+   "note": "Molasses and peanut butter taffy. Halloween bottom-of-the-bag.",
+   "rank": null,
+   "shape": "bar",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T02:56:09.367Z",
+   "colors": [
+    "#f5c400",
+    "#c8102e"
+   ]
+  },
+  {
+   "id": "milky-way",
+   "added": "2026-11-03T00:00:00Z",
+   "binnedAt": "2026-11-04T02:51:50.552Z",
+   "name": "Milky Way",
+   "rank": null,
+   "shape": "bar",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T02:51:50.552Z",
+   "colors": [
+    "#2a7a40",
+    "#4a2a14"
+   ]
+  },
+  {
+   "id": "milky-way-simply-caramel",
+   "added": "2026-11-04T03:05:00Z",
+   "binnedAt": "2026-11-04T03:02:58.373Z",
+   "name": "Milky Way Simply Caramel",
+   "note": "You binned every nougat bar but put Caramello first. This is Milky Way with the nougat removed.",
+   "rank": null,
+   "shape": "bar",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T03:02:58.373Z",
+   "colors": [
+    "#c8912a",
+    "#4a2a14"
+   ]
+  },
+  {
+   "id": "nerds",
+   "added": "2026-11-03T00:00:00Z",
+   "binnedAt": "2026-11-04T02:55:47.136Z",
+   "name": "Nerds",
+   "rank": null,
+   "shape": "pieces",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T02:55:47.136Z",
+   "colors": [
+    "#e91e63",
+    "#ab47bc"
+   ]
+  },
+  {
+   "id": "payday",
+   "added": "2026-11-03T00:00:00Z",
+   "binnedAt": "2026-11-04T02:51:52.447Z",
+   "name": "PayDay",
+   "rank": null,
+   "shape": "bar",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T02:51:52.447Z",
+   "colors": [
+    "#d7191c",
+    "#f5a623"
+   ]
+  },
+  {
+   "id": "peanut-mms",
+   "added": "2026-11-03T00:00:00Z",
+   "binnedAt": "2026-11-04T02:53:15.187Z",
+   "name": "Peanut M&M's",
+   "rank": null,
+   "shape": "pieces",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T02:53:15.187Z",
+   "colors": [
+    "#f5c400",
+    "#3d2314"
+   ]
+  },
+  {
+   "id": "pop-rocks",
+   "added": "2026-11-03T00:00:00Z",
+   "binnedAt": "2026-11-04T02:53:30.642Z",
+   "name": "Pop Rocks",
+   "rank": null,
+   "shape": "bag",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T02:53:30.642Z",
+   "colors": [
+    "#e53935",
+    "#1e88e5"
+   ]
+  },
+  {
+   "id": "queen-anne-cherries",
+   "added": "2026-11-03T22:05:00Z",
+   "binnedAt": "2026-11-04T03:02:14.931Z",
+   "name": "Queen Anne Cordial Cherries",
+   "note": "Love or hate. Holiday box.",
+   "rank": null,
+   "shape": "box",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T03:02:14.931Z",
+   "colors": [
+    "#c8102e",
+    "#f4f6f8"
+   ]
+  },
+  {
+   "id": "ring-pop",
+   "added": "2026-11-03T00:00:00Z",
+   "binnedAt": "2026-11-04T02:53:18.482Z",
+   "name": "Ring Pop",
+   "rank": null,
+   "shape": "pop",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T02:53:18.482Z",
+   "colors": [
+    "#e91e63",
+    "#00bcd4"
+   ]
+  },
+  {
+   "id": "salted-nut-roll",
+   "added": "2026-11-03T21:55:00Z",
+   "binnedAt": "2026-11-04T02:56:16.371Z",
+   "name": "Salted Nut Roll",
+   "note": "Pearson's. Nougat, caramel, salted peanuts. PayDay's rougher cousin.",
+   "rank": null,
+   "shape": "bar",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T02:56:16.371Z",
+   "colors": [
+    "#c8102e",
+    "#f2e6c9"
+   ]
+  },
+  {
+   "id": "smarties",
+   "added": "2026-11-03T00:00:00Z",
+   "binnedAt": "2026-11-04T02:52:55.927Z",
+   "name": "Smarties",
+   "rank": null,
+   "shape": "roll",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T02:52:55.927Z",
+   "colors": [
+    "#f48fb1",
+    "#b39ddb"
+   ]
+  },
+  {
+   "id": "snickers",
+   "added": "2026-11-03T00:00:00Z",
+   "binnedAt": "2026-11-04T02:53:28.438Z",
+   "name": "Snickers",
+   "rank": null,
+   "shape": "bar",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T02:53:28.438Z",
+   "colors": [
+    "#3d2314",
+    "#2a5bd7"
+   ]
+  },
+  {
+   "id": "sour-patch-kids",
+   "added": "2026-11-03T00:00:00Z",
+   "binnedAt": "2026-11-04T02:52:02.176Z",
+   "name": "Sour Patch Kids",
+   "rank": null,
+   "shape": "bag",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T02:52:02.176Z",
+   "colors": [
+    "#2ecc71",
+    "#f1c40f"
+   ]
+  },
+  {
+   "id": "sugar-daddy",
+   "added": "2026-11-03T21:55:00Z",
+   "binnedAt": "2026-11-04T02:55:48.294Z",
+   "name": "Sugar Daddy",
+   "note": "Caramel on a stick. Takes an hour.",
+   "rank": null,
+   "shape": "pop",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T02:55:48.294Z",
+   "colors": [
+    "#c8912a",
+    "#c8102e"
+   ]
+  },
+  {
+   "id": "swedish-fish",
+   "added": "2026-11-03T00:00:00Z",
+   "binnedAt": "2026-11-04T02:52:57.590Z",
+   "name": "Swedish Fish",
+   "rank": null,
+   "shape": "bag",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T02:52:57.590Z",
+   "colors": [
+    "#c8102e",
+    "#ff6b6b"
+   ]
+  },
+  {
+   "id": "sweetarts",
+   "added": "2026-11-03T00:00:00Z",
+   "binnedAt": "2026-11-04T02:52:05.180Z",
+   "name": "SweeTarts",
+   "rank": null,
+   "shape": "roll",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T02:52:05.180Z",
+   "colors": [
+    "#5e35b1",
+    "#ec407a"
+   ]
+  },
+  {
+   "id": "take-5",
+   "added": "2026-11-03T22:05:00Z",
+   "binnedAt": "2026-11-04T03:02:16.349Z",
+   "name": "Take 5",
+   "note": "Pretzel, caramel, peanut butter, peanuts, chocolate. Underrated.",
+   "rank": null,
+   "shape": "bar",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T03:02:16.349Z",
+   "colors": [
+    "#1b61b0",
+    "#f5a623"
+   ]
+  },
+  {
+   "id": "tootsie-roll",
+   "added": "2026-11-03T00:00:00Z",
+   "binnedAt": "2026-11-04T02:52:06.215Z",
+   "name": "Tootsie Roll",
+   "rank": null,
+   "shape": "roll",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T02:52:06.215Z",
+   "colors": [
+    "#4a2a14",
+    "#c8102e"
+   ]
+  },
+  {
+   "id": "twizzlers",
+   "added": "2026-11-03T00:00:00Z",
+   "binnedAt": "2026-11-04T02:52:22.534Z",
+   "name": "Twizzlers",
+   "rank": null,
+   "shape": "stick",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T02:52:22.534Z",
+   "colors": [
+    "#d7191c",
+    "#ff8a80"
+   ]
+  },
+  {
+   "id": "warheads",
+   "added": "2026-11-03T00:00:00Z",
+   "binnedAt": "2026-11-04T02:52:20.766Z",
+   "name": "Warheads",
+   "rank": null,
+   "shape": "bag",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T02:52:20.766Z",
+   "colors": [
+    "#222222",
+    "#fdd835"
+   ]
+  },
+  {
+   "id": "werthers",
+   "added": "2026-11-03T00:00:00Z",
+   "binnedAt": "2026-11-04T02:52:19.266Z",
+   "name": "Werther's Original",
+   "rank": null,
+   "shape": "bag",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T02:52:19.266Z",
+   "colors": [
+    "#b8860b",
+    "#f0d78c"
+   ]
+  },
+  {
+   "id": "whatchamacallit",
+   "added": "2026-11-03T21:55:00Z",
+   "binnedAt": "2026-11-04T02:56:15.576Z",
+   "name": "Whatchamacallit",
+   "note": "Peanut-flavor crisp, caramel, chocolate. Hershey's oddball.",
+   "rank": null,
+   "shape": "bar",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T02:56:15.576Z",
+   "colors": [
+    "#c8102e",
+    "#f5c400"
+   ]
+  },
+  {
+   "id": "whoppers",
+   "added": "2026-11-03T00:00:00Z",
+   "binnedAt": "2026-11-04T02:52:21.346Z",
+   "name": "Whoppers",
+   "rank": null,
+   "shape": "box",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T02:52:21.346Z",
+   "colors": [
+    "#c8102e",
+    "#f7941d"
+   ]
+  },
+  {
+   "id": "zero-bar",
+   "added": "2026-11-03T21:55:00Z",
+   "binnedAt": "2026-11-04T02:55:44.549Z",
+   "name": "Zero Bar",
+   "note": "White fudge over caramel, peanut and almond nougat. Odd one.",
+   "rank": null,
+   "shape": "bar",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T02:55:44.549Z",
+   "colors": [
+    "#1b61b0",
+    "#e8ecf2"
+   ]
+  }
+ ]
+}

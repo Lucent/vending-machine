@@ -1,0 +1,1479 @@
+{
+ "collection": "snacks",
+ "exported": "2026-11-03",
+ "items": [
+  {
+   "id": "fritos-flavor-twists-bbq",
+   "added": "2026-11-03T22:45:00Z",
+   "name": "Fritos Flavor Twists Honey BBQ",
+   "note": "You asked for it.",
+   "rank": -2,
+   "rankedAt": "2026-11-04T03:35:35.261Z",
+   "shape": "bag",
+   "source": "claude",
+   "status": "ranked",
+   "updated": "2026-11-04T03:35:35.261Z",
+   "colors": [
+    "#7b1a1a",
+    "#f5c400"
+   ]
+  },
+  {
+   "id": "planters-cheez-balls",
+   "added": "2026-11-03T23:08:00Z",
+   "name": "Planters Cheez Balls",
+   "note": "The blue can. Gone 2006, back since 2018.",
+   "rank": -2,
+   "rankedAt": "2026-11-04T03:39:31.312Z",
+   "shape": "can",
+   "source": "claude",
+   "status": "ranked",
+   "updated": "2026-11-04T03:39:31.312Z",
+   "colors": [
+    "#1b61b0",
+    "#f58220"
+   ]
+  },
+  {
+   "id": "sun-chips",
+   "added": "2026-11-03T22:30:00Z",
+   "name": "Sun Chips Harvest Cheddar",
+   "rank": -2,
+   "rankedAt": "2026-11-04T03:31:23.062Z",
+   "shape": "bag",
+   "source": "seed",
+   "status": "ranked",
+   "updated": "2026-11-04T03:31:23.062Z",
+   "colors": [
+    "#f58220",
+    "#2e7d32"
+   ]
+  },
+  {
+   "id": "combos-cheddar-pretzel",
+   "added": "2026-11-03T23:20:00Z",
+   "name": "Combos Cheddar Cheese Pretzel",
+   "note": "Pizzeria Combos sit at #4. This is the cheddar one.",
+   "rank": -1,
+   "rankedAt": "2026-11-04T03:45:41.820Z",
+   "shape": "roll",
+   "source": "claude",
+   "status": "ranked",
+   "updated": "2026-11-04T03:45:41.820Z",
+   "colors": [
+    "#f58220",
+    "#c8912a"
+   ]
+  },
+  {
+   "id": "doritos-nacho",
+   "added": "2026-11-03T22:30:00Z",
+   "name": "Doritos Nacho Cheese",
+   "rank": -1,
+   "rankedAt": "2026-11-04T03:30:34.606Z",
+   "shape": "bag",
+   "source": "seed",
+   "status": "ranked",
+   "updated": "2026-11-04T03:30:34.606Z",
+   "colors": [
+    "#c8102e",
+    "#f58220"
+   ]
+  },
+  {
+   "id": "snyders-cheddar-pretzel-pieces",
+   "added": "2026-11-03T22:55:00Z",
+   "name": "Snyder's Cheddar Cheese Pretzel Pieces",
+   "note": "You asked for it. The seasoned sourdough chunks, cheddar flavor.",
+   "rank": -1,
+   "rankedAt": "2026-11-04T03:34:32.128Z",
+   "shape": "bag",
+   "source": "claude",
+   "status": "ranked",
+   "updated": "2026-11-04T03:34:32.128Z",
+   "colors": [
+    "#f58220",
+    "#c8912a"
+   ]
+  },
+  {
+   "id": "cheetos-crunchy",
+   "added": "2026-11-03T22:30:00Z",
+   "name": "Cheetos Crunchy",
+   "rank": -0.5,
+   "rankedAt": "2026-11-04T03:33:45.098Z",
+   "shape": "bag",
+   "source": "seed",
+   "status": "ranked",
+   "updated": "2026-11-04T03:33:45.098Z",
+   "colors": [
+    "#f58220",
+    "#c8102e"
+   ]
+  },
+  {
+   "id": "cheetos-puffs",
+   "added": "2026-11-03T22:30:00Z",
+   "name": "Cheetos Puffs",
+   "rank": -0.5,
+   "rankedAt": "2026-11-04T03:31:07.121Z",
+   "shape": "bag",
+   "source": "seed",
+   "status": "ranked",
+   "updated": "2026-11-04T03:31:07.121Z",
+   "colors": [
+    "#f58220",
+    "#1b61b0"
+   ]
+  },
+  {
+   "id": "ritz-toasted-chips-cheddar",
+   "added": "2026-11-03T23:12:00Z",
+   "name": "Ritz Toasted Chips Cheddar",
+   "note": "The weird-bag one. Toasted, not fried, in Cheddar, Original, and Sour Cream & Onion.",
+   "rank": -0.5,
+   "rankedAt": "2026-11-04T03:39:27.250Z",
+   "shape": "bag",
+   "source": "claude",
+   "status": "ranked",
+   "updated": "2026-11-04T03:39:27.250Z",
+   "colors": [
+    "#c8102e",
+    "#f58220"
+   ]
+  },
+  {
+   "id": "honey-roasted-cashews",
+   "added": "2026-11-03T23:20:00Z",
+   "name": "Cashews, honey roasted",
+   "note": "Roasted cashews ranked, honey BBQ won the shelf. Planters or Sahale.",
+   "rank": 0,
+   "rankedAt": "2026-11-04T03:45:36.517Z",
+   "shape": "jar",
+   "source": "claude",
+   "status": "ranked",
+   "updated": "2026-11-04T03:45:36.517Z",
+   "colors": [
+    "#f2e6c9",
+    "#f5c400"
+   ]
+  },
+  {
+   "id": "cashews",
+   "added": "2026-11-03T22:30:00Z",
+   "name": "Cashews, roasted",
+   "rank": 0,
+   "rankedAt": "2026-11-04T03:30:19.978Z",
+   "shape": "jar",
+   "source": "seed",
+   "status": "ranked",
+   "updated": "2026-11-04T03:30:19.978Z",
+   "colors": [
+    "#f2e6c9",
+    "#c8912a"
+   ]
+  },
+  {
+   "id": "pecans-raw",
+   "added": "2026-11-03T22:45:00Z",
+   "name": "Pecans, raw",
+   "note": "The Southern nut. Raw halves from a roadside bag.",
+   "rank": 0,
+   "rankedAt": "2026-11-04T03:34:44.157Z",
+   "shape": "pieces",
+   "source": "claude",
+   "status": "ranked",
+   "updated": "2026-11-04T03:34:44.157Z",
+   "colors": [
+    "#7b4a1e",
+    "#8bc34a"
+   ]
+  },
+  {
+   "id": "pecans-roasted",
+   "added": "2026-11-03T22:45:00Z",
+   "name": "Pecans, roasted & salted",
+   "rank": 0,
+   "rankedAt": "2026-11-04T03:34:55.381Z",
+   "shape": "jar",
+   "source": "claude",
+   "status": "ranked",
+   "updated": "2026-11-04T03:34:55.381Z",
+   "colors": [
+    "#7b4a1e",
+    "#4a2a14"
+   ]
+  },
+  {
+   "id": "pistachios",
+   "added": "2026-11-03T22:30:00Z",
+   "name": "Pistachios, roasted",
+   "rank": 0,
+   "rankedAt": "2026-11-04T03:34:49.415Z",
+   "shape": "pieces",
+   "source": "seed",
+   "status": "ranked",
+   "updated": "2026-11-04T03:34:49.415Z",
+   "colors": [
+    "#8bc34a",
+    "#f2e6c9"
+   ]
+  },
+  {
+   "id": "walnuts-raw",
+   "added": "2026-11-03T22:45:00Z",
+   "name": "Walnuts, raw",
+   "note": "You asked for it.",
+   "rank": 0,
+   "rankedAt": "2026-11-04T03:34:51.058Z",
+   "shape": "pieces",
+   "source": "claude",
+   "status": "ranked",
+   "updated": "2026-11-04T03:34:51.058Z",
+   "colors": [
+    "#c8912a",
+    "#8bc34a"
+   ]
+  },
+  {
+   "id": "boiled-peanuts",
+   "added": "2026-11-03T22:30:00Z",
+   "name": "Boiled Peanuts",
+   "note": "Roadside or canned (Peanut Patch).",
+   "rank": 0.5,
+   "rankedAt": "2026-11-04T03:45:59.379Z",
+   "shape": "can",
+   "source": "seed",
+   "status": "ranked",
+   "updated": "2026-11-04T03:45:59.379Z",
+   "colors": [
+    "#4a2a14",
+    "#c8912a"
+   ]
+  },
+  {
+   "id": "captains-wafers",
+   "added": "2026-11-03T22:30:00Z",
+   "name": "Captain's Wafers Cream Cheese & Chives",
+   "note": "Lance's other vending-machine cracker.",
+   "rank": 0.5,
+   "rankedAt": "2026-11-04T03:32:11.512Z",
+   "shape": "box",
+   "source": "seed",
+   "status": "ranked",
+   "updated": "2026-11-04T03:32:11.512Z",
+   "colors": [
+    "#1b61b0",
+    "#f4f6f8"
+   ]
+  },
+  {
+   "id": "corn-nuts",
+   "added": "2026-11-03T22:30:00Z",
+   "name": "Corn Nuts",
+   "rank": 0.5,
+   "rankedAt": "2026-11-04T03:46:01.622Z",
+   "shape": "pieces",
+   "source": "seed",
+   "status": "ranked",
+   "updated": "2026-11-04T03:46:01.622Z",
+   "colors": [
+    "#f5c400",
+    "#c8102e"
+   ]
+  },
+  {
+   "id": "gardettos-rye-chips",
+   "added": "2026-11-03T22:45:00Z",
+   "name": "Gardetto's Rye Chips (just the rye chips)",
+   "note": "The dark crunchy discs from the mix, sold on their own.",
+   "rank": 0.5,
+   "rankedAt": "2026-11-04T03:35:42.682Z",
+   "shape": "bag",
+   "source": "claude",
+   "status": "ranked",
+   "updated": "2026-11-04T03:35:42.682Z",
+   "colors": [
+    "#4a2a14",
+    "#c8102e"
+   ]
+  },
+  {
+   "id": "fritos",
+   "added": "2026-11-03T22:30:00Z",
+   "name": "Fritos Chili Cheese",
+   "note": "Swapped in for plain Fritos at your request, keeping its rank.",
+   "rank": 1.5,
+   "rankedAt": "2026-11-04T03:31:37.474Z",
+   "shape": "bag",
+   "source": "seed",
+   "status": "ranked",
+   "updated": "2026-11-04T03:31:37.474Z",
+   "colors": [
+    "#c8102e",
+    "#f5c400"
+   ]
+  },
+  {
+   "id": "lays-bbq",
+   "added": "2026-11-03T22:30:00Z",
+   "name": "Lay's Barbecue",
+   "rank": 1.5,
+   "rankedAt": "2026-11-04T03:36:06.910Z",
+   "shape": "bag",
+   "source": "seed",
+   "status": "ranked",
+   "updated": "2026-11-04T03:36:06.910Z",
+   "colors": [
+    "#7b1a1a",
+    "#f5c400"
+   ]
+  },
+  {
+   "id": "zapps-voodoo",
+   "added": "2026-11-03T22:30:00Z",
+   "name": "Zapp's Voodoo",
+   "note": "Louisiana kettle chips. Shows up in Tennessee gas stations.",
+   "rank": 1.5,
+   "rankedAt": "2026-11-04T03:31:54.977Z",
+   "shape": "bag",
+   "source": "seed",
+   "status": "ranked",
+   "updated": "2026-11-04T03:31:54.977Z",
+   "colors": [
+    "#7b1fa2",
+    "#f5c400"
+   ]
+  },
+  {
+   "id": "cheese-nips",
+   "added": "2026-11-03T23:08:00Z",
+   "name": "Cheese Nips",
+   "note": "Nabisco's Cheez-It. Quietly dropped a few years ago.",
+   "rank": 2,
+   "rankedAt": "2026-11-04T03:39:56.339Z",
+   "shape": "box",
+   "source": "claude",
+   "status": "ranked",
+   "updated": "2026-11-04T03:39:56.339Z",
+   "colors": [
+    "#c8102e",
+    "#f58220"
+   ]
+  },
+  {
+   "id": "cheez-it",
+   "added": "2026-11-03T22:30:00Z",
+   "name": "Cheez-It",
+   "rank": 2,
+   "rankedAt": "2026-11-04T03:31:12.613Z",
+   "shape": "box",
+   "source": "seed",
+   "status": "ranked",
+   "updated": "2026-11-04T03:31:12.613Z",
+   "colors": [
+    "#c8102e",
+    "#f58220"
+   ]
+  },
+  {
+   "id": "chex-mix-cheddar",
+   "added": "2026-11-03T22:58:00Z",
+   "name": "Chex Mix Cheddar",
+   "note": "You asked for it.",
+   "rank": 2,
+   "rankedAt": "2026-11-04T03:36:33.906Z",
+   "shape": "bag",
+   "source": "claude",
+   "status": "ranked",
+   "updated": "2026-11-04T03:36:33.906Z",
+   "colors": [
+    "#f58220",
+    "#1b61b0"
+   ]
+  },
+  {
+   "id": "ritz",
+   "added": "2026-11-03T22:30:00Z",
+   "name": "Ritz",
+   "rank": 2,
+   "rankedAt": "2026-11-04T03:31:01.866Z",
+   "shape": "box",
+   "source": "seed",
+   "status": "ranked",
+   "updated": "2026-11-04T03:31:01.866Z",
+   "colors": [
+    "#c8102e",
+    "#f5c400"
+   ]
+  },
+  {
+   "id": "chachos",
+   "added": "2026-11-03T23:08:00Z",
+   "name": "Chachos",
+   "note": "Frito-Lay restaurant-style tortilla chips with cheese. Early 90s, gone.",
+   "rank": null,
+   "shape": "bag",
+   "source": "claude",
+   "status": "pool",
+   "updated": "2026-11-03T23:08:00Z",
+   "colors": [
+    "#f58220",
+    "#2e7d32"
+   ]
+  },
+  {
+   "id": "dots-honey-mustard",
+   "added": "2026-11-03T23:20:00Z",
+   "name": "Dot's Honey Mustard Pretzels",
+   "note": "The seasoned pretzel that took over gas stations since 2019. Sweet, tangy, heavily dusted.",
+   "rank": null,
+   "shape": "bag",
+   "source": "claude",
+   "status": "pool",
+   "updated": "2026-11-03T23:20:00Z",
+   "colors": [
+    "#f5c400",
+    "#c8102e"
+   ]
+  },
+  {
+   "id": "eagle-honey-roast-peanuts",
+   "added": "2026-11-03T23:08:00Z",
+   "name": "Eagle Snacks Honey Roast Peanuts",
+   "note": "Anheuser-Busch's snack line, airline peanuts included. Dead in 1996.",
+   "rank": null,
+   "shape": "jar",
+   "source": "claude",
+   "status": "pool",
+   "updated": "2026-11-03T23:08:00Z",
+   "colors": [
+    "#c8102e",
+    "#f5c400"
+   ]
+  },
+  {
+   "id": "fritos-bbq",
+   "added": "2026-11-03T23:20:00Z",
+   "name": "Fritos Bar-B-Q",
+   "note": "The flat corn chip with BBQ dust. Pulled in 2018, back since 2020.",
+   "rank": null,
+   "shape": "bag",
+   "source": "claude",
+   "status": "pool",
+   "updated": "2026-11-03T23:20:00Z",
+   "colors": [
+    "#7b1a1a",
+    "#f5c400"
+   ]
+  },
+  {
+   "id": "keebler-munchems",
+   "added": "2026-11-03T23:08:00Z",
+   "name": "Keebler Munch'ems",
+   "note": "Baked, not fried, cracker chips. Sour Cream & Onion. Gone.",
+   "rank": null,
+   "shape": "box",
+   "source": "claude",
+   "status": "pool",
+   "updated": "2026-11-03T23:08:00Z",
+   "colors": [
+    "#c8102e",
+    "#f5c400"
+   ]
+  },
+  {
+   "id": "keebler-oboisies",
+   "added": "2026-11-03T23:08:00Z",
+   "name": "Keebler O'Boisies",
+   "note": "Puffy bubbled potato chips. Gone by the late 90s.",
+   "rank": null,
+   "shape": "bag",
+   "source": "claude",
+   "status": "pool",
+   "updated": "2026-11-03T23:08:00Z",
+   "colors": [
+    "#2e7d32",
+    "#f5c400"
+   ]
+  },
+  {
+   "id": "keebler-wheatables",
+   "added": "2026-11-03T23:08:00Z",
+   "name": "Keebler Wheatables",
+   "note": "Keebler's Wheat Thins. Discontinued.",
+   "rank": null,
+   "shape": "box",
+   "source": "claude",
+   "status": "pool",
+   "updated": "2026-11-03T23:08:00Z",
+   "colors": [
+    "#c8912a",
+    "#2e7d32"
+   ]
+  },
+  {
+   "id": "lays-honey-bbq",
+   "added": "2026-11-03T23:20:00Z",
+   "name": "Lay's Honey Barbecue",
+   "note": "Honey BBQ on the potato carrier. Tests whether the flavor beats your potato-chip aversion.",
+   "rank": null,
+   "shape": "bag",
+   "source": "claude",
+   "status": "pool",
+   "updated": "2026-11-03T23:20:00Z",
+   "colors": [
+    "#c8912a",
+    "#f5c400"
+   ]
+  },
+  {
+   "id": "doo-dads",
+   "added": "2026-11-03T23:08:00Z",
+   "name": "Nabisco Doo Dads",
+   "note": "Nabisco's snack mix before Chex Mix won. Gone in the 90s.",
+   "rank": null,
+   "shape": "box",
+   "source": "claude",
+   "status": "pool",
+   "updated": "2026-11-03T23:08:00Z",
+   "colors": [
+    "#c8102e",
+    "#f5c400"
+   ]
+  },
+  {
+   "id": "planters-cheez-curls",
+   "added": "2026-11-03T23:08:00Z",
+   "name": "Planters Cheez Curls",
+   "note": "Same can, the curls. Came back with the balls.",
+   "rank": null,
+   "shape": "can",
+   "source": "claude",
+   "status": "pool",
+   "updated": "2026-11-03T23:08:00Z",
+   "colors": [
+    "#1b61b0",
+    "#f58220"
+   ]
+  },
+  {
+   "id": "planters-pb-crisps",
+   "added": "2026-11-03T23:08:00Z",
+   "name": "Planters P.B. Crisps",
+   "note": "Peanut-shaped shells filled with peanut butter. Gone since the mid-90s. Petitions exist.",
+   "rank": null,
+   "shape": "bag",
+   "source": "claude",
+   "status": "pool",
+   "updated": "2026-11-03T23:08:00Z",
+   "colors": [
+    "#c8912a",
+    "#1b61b0"
+   ]
+  },
+  {
+   "id": "sun-chips-french-onion",
+   "added": "2026-11-03T23:08:00Z",
+   "name": "Sun Chips French Onion",
+   "note": "The original Sun Chips flavor. Pulled around 2020.",
+   "rank": null,
+   "shape": "bag",
+   "source": "claude",
+   "status": "pool",
+   "updated": "2026-11-03T23:08:00Z",
+   "colors": [
+    "#2e7d32",
+    "#f5c400"
+   ]
+  },
+  {
+   "id": "almonds-raw",
+   "added": "2026-11-03T22:45:00Z",
+   "binnedAt": "2026-11-04T03:35:06.827Z",
+   "name": "Almonds, raw",
+   "rank": null,
+   "shape": "pieces",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T03:35:06.827Z",
+   "colors": [
+    "#b5651d",
+    "#8bc34a"
+   ]
+  },
+  {
+   "id": "almonds-roasted",
+   "added": "2026-11-03T22:45:00Z",
+   "binnedAt": "2026-11-04T03:35:02.264Z",
+   "name": "Almonds, roasted",
+   "rank": null,
+   "shape": "jar",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T03:35:02.264Z",
+   "colors": [
+    "#b5651d",
+    "#4a2a14"
+   ]
+  },
+  {
+   "id": "andy-capps-hot-fries",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:30:14.994Z",
+   "name": "Andy Capp's Hot Fries",
+   "rank": null,
+   "shape": "bag",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:30:14.994Z",
+   "colors": [
+    "#c8102e",
+    "#f5c400"
+   ]
+  },
+  {
+   "id": "bugles",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:32:06.619Z",
+   "name": "Bugles",
+   "rank": null,
+   "shape": "bag",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:32:06.619Z",
+   "colors": [
+    "#f5c400",
+    "#c8102e"
+   ]
+  },
+  {
+   "id": "cape-cod",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:31:09.745Z",
+   "name": "Cape Cod Kettle Chips",
+   "rank": null,
+   "shape": "bag",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:31:09.745Z",
+   "colors": [
+    "#1b61b0",
+    "#f4f6f8"
+   ]
+  },
+  {
+   "id": "cashews-raw",
+   "added": "2026-11-03T22:45:00Z",
+   "binnedAt": "2026-11-04T03:35:04.325Z",
+   "name": "Cashews, raw",
+   "rank": null,
+   "shape": "pieces",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T03:35:04.325Z",
+   "colors": [
+    "#f2e6c9",
+    "#8bc34a"
+   ]
+  },
+  {
+   "id": "chex-mix",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:39:34.401Z",
+   "name": "Chex Mix Traditional",
+   "rank": null,
+   "shape": "bag",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:39:34.401Z",
+   "colors": [
+    "#1b61b0",
+    "#f58220"
+   ]
+  },
+  {
+   "id": "chicken-in-a-biskit",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:39:35.588Z",
+   "name": "Chicken in a Biskit",
+   "rank": null,
+   "shape": "box",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:39:35.588Z",
+   "colors": [
+    "#f5c400",
+    "#c8102e"
+   ]
+  },
+  {
+   "id": "club-crackers",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:30:29.508Z",
+   "name": "Club Crackers",
+   "rank": null,
+   "shape": "box",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:30:29.508Z",
+   "colors": [
+    "#2e7d32",
+    "#f5c400"
+   ]
+  },
+  {
+   "id": "combos",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:45:44.136Z",
+   "name": "Combos Pizzeria Pretzel",
+   "rank": null,
+   "rankedAt": "2026-11-04T03:30:31.538Z",
+   "shape": "roll",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:45:44.136Z",
+   "colors": [
+    "#c8102e",
+    "#f5c400"
+   ]
+  },
+  {
+   "id": "corn-nuts-bbq",
+   "added": "2026-11-03T23:20:00Z",
+   "binnedAt": "2026-11-04T03:48:53.572Z",
+   "name": "Corn Nuts BBQ",
+   "note": "Corn Nuts ranked, BBQ ranks. Same thing with dust.",
+   "rank": null,
+   "shape": "pieces",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T03:48:53.572Z",
+   "colors": [
+    "#7b1a1a",
+    "#f5c400"
+   ]
+  },
+  {
+   "id": "crunch-tators",
+   "added": "2026-11-03T23:08:00Z",
+   "binnedAt": "2026-11-04T03:39:49.468Z",
+   "name": "Crunch Tators",
+   "note": "Frito-Lay kettle chips, Hoppin' Jalapeño and Mighty Mesquite. Gone by the mid-90s.",
+   "rank": null,
+   "shape": "bag",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T03:39:49.468Z",
+   "colors": [
+    "#2e7d32",
+    "#f5c400"
+   ]
+  },
+  {
+   "id": "david-sunflower-seeds",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:30:37.648Z",
+   "name": "David Sunflower Seeds",
+   "rank": null,
+   "shape": "pieces",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:30:37.648Z",
+   "colors": [
+    "#222222",
+    "#f5c400"
+   ]
+  },
+  {
+   "id": "doritos-3ds",
+   "added": "2026-11-03T23:08:00Z",
+   "binnedAt": "2026-11-04T03:39:48.171Z",
+   "name": "Doritos 3D's",
+   "note": "Puffed hollow Doritos, 1998 to 2004. Back as 3D Crunch since 2020, not quite the same.",
+   "rank": null,
+   "shape": "bag",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T03:39:48.171Z",
+   "colors": [
+    "#c8102e",
+    "#1b61b0"
+   ]
+  },
+  {
+   "id": "doritos-cool-ranch",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:30:36.103Z",
+   "name": "Doritos Cool Ranch",
+   "rank": null,
+   "shape": "bag",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:30:36.103Z",
+   "colors": [
+    "#1b61b0",
+    "#c8102e"
+   ]
+  },
+  {
+   "id": "doritos-taco",
+   "added": "2026-11-03T23:20:00Z",
+   "binnedAt": "2026-11-04T03:48:52.635Z",
+   "name": "Doritos Taco",
+   "note": "The 1967 original flavor, back in the retro bag. Savory-sweet, no heat.",
+   "rank": null,
+   "shape": "bag",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T03:48:52.635Z",
+   "colors": [
+    "#c8912a",
+    "#c8102e"
+   ]
+  },
+  {
+   "id": "flamin-hot-cheetos",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:31:03.438Z",
+   "name": "Flamin' Hot Cheetos",
+   "rank": null,
+   "shape": "bag",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:31:03.438Z",
+   "colors": [
+    "#c8102e",
+    "#222222"
+   ]
+  },
+  {
+   "id": "funyuns",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:33:50.298Z",
+   "name": "Funyuns",
+   "rank": null,
+   "shape": "bag",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:33:50.298Z",
+   "colors": [
+    "#f5c400",
+    "#7b1fa2"
+   ]
+  },
+  {
+   "id": "gardettos",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:36:21.852Z",
+   "name": "Gardetto's",
+   "rank": null,
+   "shape": "bag",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:36:21.852Z",
+   "colors": [
+    "#c8102e",
+    "#f2e6c9"
+   ]
+  },
+  {
+   "id": "golden-flake",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:31:27.842Z",
+   "name": "Golden Flake",
+   "note": "Birmingham. The South's chip before Lay's took over.",
+   "rank": null,
+   "shape": "bag",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:31:27.842Z",
+   "colors": [
+    "#f5c400",
+    "#c8102e"
+   ]
+  },
+  {
+   "id": "goldfish",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:31:29.515Z",
+   "name": "Goldfish",
+   "rank": null,
+   "shape": "box",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:31:29.515Z",
+   "colors": [
+    "#f58220",
+    "#1b61b0"
+   ]
+  },
+  {
+   "id": "grippos-bbq",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:31:31.429Z",
+   "name": "Grippo's BBQ",
+   "note": "Cincinnati. Spicy-sweet barbecue, cult following down through Kentucky.",
+   "rank": null,
+   "shape": "bag",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:31:31.429Z",
+   "colors": [
+    "#c8102e",
+    "#f5c400"
+   ]
+  },
+  {
+   "id": "jack-links",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:31:49.478Z",
+   "name": "Jack Link's Beef Jerky",
+   "rank": null,
+   "shape": "stick",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:31:49.478Z",
+   "colors": [
+    "#222222",
+    "#c8102e"
+   ]
+  },
+  {
+   "id": "keebler-pizzarias",
+   "added": "2026-11-03T23:08:00Z",
+   "binnedAt": "2026-11-04T03:39:46.160Z",
+   "name": "Keebler Pizzarias",
+   "note": "Pizza chips made from actual pizza dough. Early 90s, gone.",
+   "rank": null,
+   "shape": "bag",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T03:39:46.160Z",
+   "colors": [
+    "#c8102e",
+    "#f5c400"
+   ]
+  },
+  {
+   "id": "keebler-tato-skins",
+   "added": "2026-11-03T23:08:00Z",
+   "binnedAt": "2026-11-04T03:39:38.886Z",
+   "name": "Keebler Tato Skins",
+   "note": "Baked potato skin chips. Keebler dropped them; TGI Friday's sells a version now.",
+   "rank": null,
+   "shape": "bag",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T03:39:38.886Z",
+   "colors": [
+    "#4a2a14",
+    "#f5c400"
+   ]
+  },
+  {
+   "id": "kettle-brand",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:30:41.861Z",
+   "name": "Kettle Brand Sea Salt",
+   "rank": null,
+   "shape": "bag",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:30:41.861Z",
+   "colors": [
+    "#4a2a14",
+    "#f2e6c9"
+   ]
+  },
+  {
+   "id": "lance-toastchee",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:30:44.545Z",
+   "name": "Lance Toastchee",
+   "note": "Peanut butter on cheese crackers. Charlotte, every vending machine in the South.",
+   "rank": null,
+   "shape": "roll",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:30:44.545Z",
+   "colors": [
+    "#f58220",
+    "#c8102e"
+   ]
+  },
+  {
+   "id": "lays-classic",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:32:13.908Z",
+   "name": "Lay's Classic",
+   "rank": null,
+   "shape": "bag",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:32:13.908Z",
+   "colors": [
+    "#f5c400",
+    "#c8102e"
+   ]
+  },
+  {
+   "id": "lays-sour-cream-onion",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:31:48.478Z",
+   "name": "Lay's Sour Cream & Onion",
+   "rank": null,
+   "shape": "bag",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:31:48.478Z",
+   "colors": [
+    "#2e7d32",
+    "#f5c400"
+   ]
+  },
+  {
+   "id": "lays-wow",
+   "added": "2026-11-03T23:08:00Z",
+   "binnedAt": "2026-11-04T03:45:14.056Z",
+   "name": "Lay's WOW",
+   "note": "The olestra chips, 1998. You know why they're gone.",
+   "rank": null,
+   "shape": "bag",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T03:45:14.056Z",
+   "colors": [
+    "#1b61b0",
+    "#f5c400"
+   ]
+  },
+  {
+   "id": "macadamias-roasted",
+   "added": "2026-11-03T22:45:00Z",
+   "binnedAt": "2026-11-04T03:34:58.766Z",
+   "name": "Macadamias, roasted",
+   "rank": null,
+   "shape": "jar",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T03:34:58.766Z",
+   "colors": [
+    "#f2e6c9",
+    "#4a2a14"
+   ]
+  },
+  {
+   "id": "pop-secret",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:31:44.771Z",
+   "name": "Microwave Popcorn (Pop Secret, Orville)",
+   "rank": null,
+   "shape": "box",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:31:44.771Z",
+   "colors": [
+    "#c8102e",
+    "#f5c400"
+   ]
+  },
+  {
+   "id": "mixed-nuts",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:30:49.627Z",
+   "name": "Mixed Nuts, roasted",
+   "rank": null,
+   "shape": "jar",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:30:49.627Z",
+   "colors": [
+    "#c8912a",
+    "#4a2a14"
+   ]
+  },
+  {
+   "id": "munchies-cheese-fix",
+   "added": "2026-11-03T23:20:00Z",
+   "binnedAt": "2026-11-04T03:48:46.574Z",
+   "name": "Munchies Cheese Fix",
+   "note": "Cheetos, Doritos, Sun Chips, and Rold Gold, all cheese-dusted. Your top ten in one bag.",
+   "rank": null,
+   "shape": "bag",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T03:48:46.574Z",
+   "colors": [
+    "#f58220",
+    "#c8102e"
+   ]
+  },
+  {
+   "id": "munchos",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:31:26.178Z",
+   "name": "Munchos",
+   "rank": null,
+   "shape": "bag",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:31:26.178Z",
+   "colors": [
+    "#1b61b0",
+    "#f5c400"
+   ]
+  },
+  {
+   "id": "nabisco-swiss-cheese",
+   "added": "2026-11-03T23:08:00Z",
+   "binnedAt": "2026-11-04T03:39:37.295Z",
+   "name": "Nabisco Swiss Cheese Crackers",
+   "note": "The crackers with holes like Swiss cheese. Discontinued.",
+   "rank": null,
+   "shape": "box",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T03:39:37.295Z",
+   "colors": [
+    "#f5c400",
+    "#c8102e"
+   ]
+  },
+  {
+   "id": "peanuts-raw",
+   "added": "2026-11-03T22:45:00Z",
+   "binnedAt": "2026-11-04T03:34:40.945Z",
+   "name": "Peanuts, raw",
+   "note": "Shelled raw, the boiled-peanut starting point. Pairs against Planters.",
+   "rank": null,
+   "shape": "pieces",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T03:34:40.945Z",
+   "colors": [
+    "#c8912a",
+    "#8bc34a"
+   ]
+  },
+  {
+   "id": "planters-peanuts",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:30:52.818Z",
+   "name": "Planters Cocktail Peanuts",
+   "rank": null,
+   "shape": "jar",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:30:52.818Z",
+   "colors": [
+    "#1b61b0",
+    "#f5c400"
+   ]
+  },
+  {
+   "id": "pork-rinds",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:30:53.726Z",
+   "name": "Pork Rinds",
+   "rank": null,
+   "shape": "bag",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:30:53.726Z",
+   "colors": [
+    "#c8102e",
+    "#f2e6c9"
+   ]
+  },
+  {
+   "id": "pretzel-crisps-original",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:32:23.839Z",
+   "name": "Pretzel Crisps Original",
+   "note": "Same crisps as the peppermint ones, plain.",
+   "rank": null,
+   "shape": "bag",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:32:23.839Z",
+   "colors": [
+    "#c8912a",
+    "#f4f6f8"
+   ]
+  },
+  {
+   "id": "pretzel-rods",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:30:56.142Z",
+   "name": "Pretzel Rods",
+   "rank": null,
+   "shape": "stick",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:30:56.142Z",
+   "colors": [
+    "#c8912a",
+    "#f2e6c9"
+   ]
+  },
+  {
+   "id": "pringles-original",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:31:43.364Z",
+   "name": "Pringles Original",
+   "rank": null,
+   "shape": "can",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:31:43.364Z",
+   "colors": [
+    "#c8102e",
+    "#f4f6f8"
+   ]
+  },
+  {
+   "id": "pringles-sour-cream-onion",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:31:41.909Z",
+   "name": "Pringles Sour Cream & Onion",
+   "rank": null,
+   "shape": "can",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:31:41.909Z",
+   "colors": [
+    "#2e7d32",
+    "#f4f6f8"
+   ]
+  },
+  {
+   "id": "rold-gold",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:30:58.259Z",
+   "name": "Rold Gold Tiny Twists",
+   "rank": null,
+   "shape": "pieces",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:30:58.259Z",
+   "colors": [
+    "#c8912a",
+    "#c8102e"
+   ]
+  },
+  {
+   "id": "ruffles-cheddar-sour-cream",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:37:15.890Z",
+   "name": "Ruffles Cheddar & Sour Cream",
+   "rank": null,
+   "shape": "bag",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:37:15.890Z",
+   "colors": [
+    "#f58220",
+    "#1b61b0"
+   ]
+  },
+  {
+   "id": "ruffles",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:31:46.805Z",
+   "name": "Ruffles Original",
+   "rank": null,
+   "shape": "bag",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:31:46.805Z",
+   "colors": [
+    "#1b61b0",
+    "#f5c400"
+   ]
+  },
+  {
+   "id": "slim-jim",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:31:14.854Z",
+   "name": "Slim Jim",
+   "rank": null,
+   "shape": "stick",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:31:14.854Z",
+   "colors": [
+    "#c8102e",
+    "#f5c400"
+   ]
+  },
+  {
+   "id": "smartfood",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:31:59.420Z",
+   "name": "Smartfood White Cheddar",
+   "rank": null,
+   "shape": "bag",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:31:59.420Z",
+   "colors": [
+    "#222222",
+    "#f4f6f8"
+   ]
+  },
+  {
+   "id": "snyders-honey-mustard-onion-pieces",
+   "added": "2026-11-03T23:20:00Z",
+   "binnedAt": "2026-11-04T03:45:10.738Z",
+   "name": "Snyder's Honey Mustard & Onion Pretzel Pieces",
+   "note": "Your #1 (honey BBQ) and your #4 (cheddar pretzel pieces) in one bag.",
+   "rank": null,
+   "shape": "bag",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T03:45:10.738Z",
+   "colors": [
+    "#f5c400",
+    "#c8912a"
+   ]
+  },
+  {
+   "id": "snyders-pretzels",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:35:49.310Z",
+   "name": "Snyder's Sourdough Pretzels",
+   "rank": null,
+   "shape": "bag",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:35:49.310Z",
+   "colors": [
+    "#c8912a",
+    "#4a2a14"
+   ]
+  },
+  {
+   "id": "sun-chips-garden-salsa",
+   "added": "2026-11-03T23:20:00Z",
+   "binnedAt": "2026-11-04T03:45:05.782Z",
+   "name": "Sun Chips Garden Salsa",
+   "note": "The other seasoned Sun Chip. Tomato and mild pepper, no real heat.",
+   "rank": null,
+   "shape": "bag",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T03:45:05.782Z",
+   "colors": [
+    "#c8102e",
+    "#2e7d32"
+   ]
+  },
+  {
+   "id": "takis-fuego",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:31:18.073Z",
+   "name": "Takis Fuego",
+   "rank": null,
+   "shape": "bag",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:31:18.073Z",
+   "colors": [
+    "#7b1fa2",
+    "#c8102e"
+   ]
+  },
+  {
+   "id": "tostitos-scoops",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:32:21.433Z",
+   "name": "Tostitos Scoops",
+   "rank": null,
+   "shape": "bag",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:32:21.433Z",
+   "colors": [
+    "#f5c400",
+    "#c8102e"
+   ]
+  },
+  {
+   "id": "triscuit",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:32:19.833Z",
+   "name": "Triscuit",
+   "rank": null,
+   "shape": "box",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:32:19.833Z",
+   "colors": [
+    "#f5c400",
+    "#4a2a14"
+   ]
+  },
+  {
+   "id": "utz-cheese-balls",
+   "added": "2026-11-03T23:20:00Z",
+   "binnedAt": "2026-11-04T03:45:07.873Z",
+   "name": "Utz Cheese Balls (the barrel)",
+   "note": "The giant plastic barrel at Walmart. Cheez Balls' bigger, cheaper cousin.",
+   "rank": null,
+   "shape": "jar",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T03:45:07.873Z",
+   "colors": [
+    "#f58220",
+    "#c8102e"
+   ]
+  },
+  {
+   "id": "walnuts-roasted",
+   "added": "2026-11-03T22:45:00Z",
+   "binnedAt": "2026-11-04T03:35:00.442Z",
+   "name": "Walnuts, roasted",
+   "rank": null,
+   "shape": "jar",
+   "source": "claude",
+   "status": "bin",
+   "updated": "2026-11-04T03:35:00.442Z",
+   "colors": [
+    "#c8912a",
+    "#4a2a14"
+   ]
+  },
+  {
+   "id": "wavy-lays",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:31:57.222Z",
+   "name": "Wavy Lay's",
+   "rank": null,
+   "shape": "bag",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:31:57.222Z",
+   "colors": [
+    "#1b61b0",
+    "#f5c400"
+   ]
+  },
+  {
+   "id": "wheat-thins",
+   "added": "2026-11-03T22:30:00Z",
+   "binnedAt": "2026-11-04T03:31:40.567Z",
+   "name": "Wheat Thins",
+   "rank": null,
+   "shape": "box",
+   "source": "seed",
+   "status": "bin",
+   "updated": "2026-11-04T03:31:40.567Z",
+   "colors": [
+    "#c8912a",
+    "#f5c400"
+   ]
+  }
+ ]
+}
