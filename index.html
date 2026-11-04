@@ -30,15 +30,16 @@ label[for="snacks"], article[data-shelf="snacks"] { --accent: var(--snacks) }
 article { display: none; grid-template-columns: 3fr 2fr; grid-template-areas: "rank pool" "rank bin"; gap: 1em; align-items: start }
 body:has(#candies:checked) article[data-shelf="candies"], body:has(#snacks:checked) article[data-shelf="snacks"] { display: grid }
 @media (width < 50em) { article { grid-template-columns: 1fr; grid-template-areas: "pool" "rank" "bin" } }
-[data-status="ranked"] { grid-area: rank }
-[data-status="pool"] { grid-area: pool }
-[data-status="bin"] { grid-area: bin }
+section[data-status="ranked"] { grid-area: rank }
+section[data-status="pool"] { grid-area: pool }
+section[data-status="bin"] { grid-area: bin }
 
 section { display: flex; flex-wrap: wrap; align-content: start; gap: .5em; padding: .75em; border: 1px solid var(--line); border-radius: .75em }
 section h2, ol { flex-basis: 100% }
 /* the ladder: one li per rank value, numbered by the browser, a rule between ranks; its bottom padding is the drop zone for a new last rank */
 ol { margin: 0; padding: 0 0 1.5em 2.5em; border-bottom: 2px solid transparent }
-li { display: flex; flex-wrap: wrap; gap: .5em; padding: .5em 0; border-top: 2px solid var(--line) }
+li { padding: .25em 0; border-top: 2px solid var(--line) }
+li > figure { display: inline-flex; vertical-align: top; margin: .25em .5em .25em 0 }
 li:first-child { border-top-color: transparent }
 li::marker { font-weight: bold; font-size: 1.5em }
 li:has(figure + figure)::marker { content: counter(list-item) "= " }
@@ -51,8 +52,8 @@ figure svg { width: 4em; height: auto }
 figcaption { text-wrap: balance; line-height: 1.2 }
 .new { border-color: var(--accent) }
 .lifting { opacity: .3 }
-[data-status="bin"] figure { opacity: .6 }
-[data-status="bin"] svg { filter: grayscale(.6) }
+section[data-status="bin"] figure { opacity: .6 }
+section[data-status="bin"] svg { filter: grayscale(.6) }
 figure button { position: absolute; top: .2em; right: .2em }
 @media (hover: hover) { figure button { visibility: hidden } figure:hover button, figure button:focus-visible { visibility: visible } }
 .dragging button { visibility: hidden }
@@ -62,8 +63,8 @@ figure button { position: absolute; top: .2em; right: .2em }
 output { position: fixed; bottom: calc(1em + env(safe-area-inset-bottom, 0px)); left: 50%; translate: -50%; padding: .5em 1em; border-radius: 1em; background: CanvasText; color: Canvas }
 output:empty { display: none }
 .loaded ol:empty::before { content: "Drop your first one here"; color: GrayText }
-.loaded [data-status="pool"]:not(:has(figure))::after { content: "Everything is sorted. New suggestions show up here."; color: GrayText }
-.loaded [data-status="bin"]:not(:has(figure))::after { content: "Nothing tossed yet."; color: GrayText }
+.loaded section[data-status="pool"]:not(:has(figure))::after { content: "Everything is sorted."; color: GrayText }
+.loaded section[data-status="bin"]:not(:has(figure))::after { content: "Nothing tossed yet."; color: GrayText }
   </style>
  </head>
  <body>
@@ -153,7 +154,8 @@ function place(shelf) {
 	const ranked = figs.filter(f => f.dataset.status === "ranked").sort((a, b) => a.dataset.rank - b.dataset.rank || byName(a, b));
 	const pool = figs.filter(f => f.dataset.status === "pool").sort((a, b) => (b.dataset.source === "claude") - (a.dataset.source === "claude") || b.dataset.added.localeCompare(a.dataset.added) || byName(a, b));
 	const bin = figs.filter(f => f.dataset.status === "bin").sort((a, b) => b.dataset.updated.localeCompare(a.dataset.updated) || byName(a, b));
-	const tiers = Object.entries(Object.groupBy(ranked, f => f.dataset.rank));
+	// a Map keeps the sorted order; an object would put integer-like ranks first
+	const tiers = [...Map.groupBy(ranked, f => f.dataset.rank)];
 	const ranks = tiers.map(([rank]) => rank);
 	[...ladder.children].filter(li => !ranks.includes(li.dataset.rank)).forEach(li => li.remove());
 	tiers.reduce((pos, [rank, members]) => {
@@ -164,11 +166,11 @@ function place(shelf) {
 		li.append(...members);
 		return pos + members.length;
 	}, 1);
-	shelf.querySelector(`[data-status="pool"]`).append(...pool);
-	shelf.querySelector(`[data-status="bin"]`).append(...bin);
-	shelf.querySelector(`[data-status="ranked"] h2`).dataset.count = `${ranked.length} in ${tiers.length} ranks`;
-	shelf.querySelector(`[data-status="pool"] h2`).dataset.count = pool.length;
-	shelf.querySelector(`[data-status="bin"] h2`).dataset.count = bin.length;
+	shelf.querySelector(`section[data-status="pool"]`).append(...pool);
+	shelf.querySelector(`section[data-status="bin"]`).append(...bin);
+	shelf.querySelector(`section[data-status="ranked"] h2`).dataset.count = `${ranked.length} in ${tiers.length} ranks`;
+	shelf.querySelector(`section[data-status="pool"] h2`).dataset.count = pool.length;
+	shelf.querySelector(`section[data-status="bin"] h2`).dataset.count = bin.length;
 }
 
 // The shelf's state read off the DOM, and written back from a decoded hash.
@@ -176,7 +178,7 @@ function stateFrom(shelf) {
 	const index = (fig) => +fig.dataset.i;
 	return {
 		tiers: [...shelf.querySelectorAll("ol > li")].map(li => [...li.children].map(index)),
-		bin: [...shelf.querySelectorAll(`[data-status="bin"] figure`)].map(index),
+		bin: [...shelf.querySelectorAll(`section[data-status="bin"] figure`)].map(index),
 	};
 }
 function apply(shelf, { tiers, bin }) {
